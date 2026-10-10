@@ -1,0 +1,31 @@
+node_modules/
+.env
+.env.*
+!.env.example
+wp-env.override.json
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+wp-env.override.json
+
+# Database files and backups
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+data/backups/
+
+# Local uploads and logs
+uploads/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db

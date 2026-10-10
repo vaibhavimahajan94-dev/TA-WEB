@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruitment Admin Dashboard | Techno Amaze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script>
+    // Enforce authentication before DOM render
+    (function () {
+      if (sessionStorage.getItem('ta_admin_logged_in') !== 'true') {
+        window.location.replace('login.html');
+      }
+      var theme = localStorage.getItem('ta-admin-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <div class="ta-admin-app">
+
+    <!-- SIDEBAR -->
+    <aside class="ta-admin-sidebar" id="ta-sidebar">
+      <div class="ta-sidebar-brand">
+        <a href="dashboard.html">
+          <span class="ta-sidebar-brand-name">Techno<span>Amaze</span></span>
+        </a>
+        <span class="ta-sidebar-tag">Admin</span>
+      </div>
+
+      <nav class="ta-sidebar-nav">
+        <button type="button" class="ta-nav-item active" data-tab="jobs" id="nav-btn-jobs">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Job Postings</span>
+          <span class="ta-nav-badge" id="ta-sidebar-jobs-count">0</span>
+        </button>
+
+        <button type="button" class="ta-nav-item" data-tab="applications" id="nav-btn-applications">
+          <i class="fa-solid fa-users"></i>
+          <span>Applications</span>
+          <span class="ta-nav-badge" id="ta-sidebar-apps-count">0</span>
+        </button>
+
+        <div style="height:1px;background:rgba(255,255,255,0.08);margin:10px 0;"></div>
+
+        <a href="../careers.html" target="_blank" class="ta-nav-item" title="Open live public careers page">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>Public Careers</span>
+        </a>
+
+        <a href="../index.html" target="_blank" class="ta-nav-item" title="Open main website">
+          <i class="fa-solid fa-globe"></i>
+          <span>Main Website</span>
+        </a>
+      </nav>
+
+      <div class="ta-sidebar-footer">
+        <div class="ta-user-profile">
+          <div class="ta-user-avatar">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="ta-user-info">
+            <div class="ta-user-name">Recruitment Lead</div>
+            <div class="ta-user-role" id="ta-admin-user-display">admin@technoamaze.in</div>
+          </div>
+        </div>
+        <button type="button" id="ta-logout-btn" class="ta-btn-logout">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="ta-admin-main">
+
+      <!-- TOPBAR -->
+      <header class="ta-admin-topbar">
+        <div class="ta-topbar-left">
+          <button type="button" id="ta-mobile-menu-toggle" class="ta-mobile-menu-btn" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <h1 class="ta-page-heading" id="ta-header-title">Job Openings Management</h1>
+        </div>
+
+        <div class="ta-topbar-actions">
+          <span id="ta-db-badge" class="ta-badge ta-badge-open" style="font-size:12px;padding:6px 12px;" title="Real-time Database Storage & Automated JSON Backup">
+            <i class="fa-solid fa-database"></i> <span id="ta-db-text">Database: Synced</span>
+          </span>
+
+          <a href="../api/manage-applications.php?action=download_sql_backup" class="ta-btn-secondary" title="Download complete database backup as .SQL file">
+            <i class="fa-solid fa-download"></i> <span>Backup (SQL)</span>
+          </a>
+
+          <button type="button" id="ta-theme-toggle-btn" class="ta-btn-secondary" title="Toggle dark/light theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button type="button" id="ta-btn-create-job" class="ta-btn-post-job">
+            <i class="fa-solid fa-plus"></i>
+            <span>Post New Job</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- BODY CONTENT -->
+      <div class="ta-admin-content">
+
+        <!-- KPI SUMMARY CARDS -->
+        <section class="ta-kpi-grid">
+          <div class="ta-kpi-card">
+            <div class="ta-kpi-info">
+              <h4>Active Openings</h4>
+              <div class="ta-kpi-num" id="kpi-open-jobs">0</div>
+            </div>
+            <div class="ta-kpi-icon pink">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+          </div>
+
+          <div class="ta-kpi-card">
+            <div class="ta-kpi-info">
+              <h4>Total Postings</h4>
+              <div class="ta-kpi-num" id="kpi-total-jobs">0</div>
+            </div>
+            <div class="ta-kpi-icon blue">
+              <i class="fa-solid fa-folder-open"></i>
+            </div>
+          </div>
+
+          <div class="ta-kpi-card">
+            <div class="ta-kpi-info">
+              <h4>Total Candidates</h4>
+              <div class="ta-kpi-num" id="kpi-total-apps">0</div>
+            </div>
+            <div class="ta-kpi-icon green">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+          </div>
+
+          <div class="ta-kpi-card">
+            <div class="ta-kpi-info">
+              <h4>New Unreviewed</h4>
+              <div class="ta-kpi-num" id="kpi-new-apps">0</div>
+            </div>
+            <div class="ta-kpi-icon amber">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 1: JOB POSTINGS MANAGEMENT
+             =================================================================== -->
+        <section id="section-jobs" class="ta-tab-section active">
+          <div class="ta-panel-card">
+            <div class="ta-panel-header">
+              <div class="ta-panel-title">
+                <i class="fa-solid fa-list-check" style="color:var(--ta-primary);"></i>
+                <span>Open Positions Directory</span>
+              </div>
+
+              <div class="ta-panel-actions">
+                <div class="ta-search-input-wrap">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" id="jobs-search-input" placeholder="Search by title, location...">
+                </div>
+
+                <select id="jobs-filter-dept" class="ta-filter-select">
+                  <option value="all">All Departments</option>
+                  <option value="Engineering">Engineering</option>
+                  <option value="AI & Data">AI &amp; Data</option>
+                  <option value="Design">Design</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Quality Assurance">Quality Assurance</option>
+                </select>
+
+                <select id="jobs-filter-status" class="ta-filter-select">
+                  <option value="all">All Statuses</option>
+                  <option value="open">Open Only</option>
+                  <option value="closed">Closed Only</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="ta-table-wrap">
+              <table class="ta-table">
+                <thead>
+                  <tr>
+                    <th>Job Title &amp; Department</th>
+                    <th>Location &amp; Type</th>
+                    <th>Experience</th>
+                    <th>Salary Range</th>
+                    <th>Deadline</th>
+                    <th>Applicants</th>
+                    <th>Status</th>
+                    <th style="text-align:right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ta-jobs-tbody">
+                  <tr>
+                    <td colspan="8" class="ta-table-empty">
+                      <i class="fa-solid fa-spinner fa-spin"></i>
+                      Loading positions...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 2: APPLICATIONS MANAGEMENT
+             =================================================================== -->
+        <section id="section-applications" class="ta-tab-section" style="display:none;">
+          <div class="ta-panel-card">
+            <div class="ta-panel-header">
+              <div class="ta-panel-title">
+                <i class="fa-solid fa-user-group" style="color:var(--ta-primary);"></i>
+                <span>Candidate Submissions</span>
+              </div>
+
+              <div class="ta-panel-actions">
+                <div class="ta-search-input-wrap">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" id="apps-search-input" placeholder="Search candidate name, email, phone...">
+                </div>
+
+                <select id="apps-filter-job" class="ta-filter-select">
+                  <option value="all">All Positions</option>
+                </select>
+
+                <select id="apps-filter-status" class="ta-filter-select">
+                  <option value="all">All Stages</option>
+                  <option value="New">New</option>
+                  <option value="Reviewing">Reviewing</option>
+                  <option value="Shortlisted">Shortlisted</option>
+                  <option value="Interview">Interview</option>
+                  <option value="Selected">Selected</option>
+                  <option value="Rejected">Rejected</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="ta-table-wrap">
+              <table class="ta-table">
+                <thead>
+                  <tr>
+                    <th>Candidate</th>
+                    <th>Applied Position</th>
+                    <th>Contact Info</th>
+                    <th>Experience</th>
+                    <th>Date Applied</th>
+                    <th>Recruiting Stage</th>
+                    <th>Resume</th>
+                    <th style="text-align:right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ta-apps-tbody">
+                  <tr>
+                    <td colspan="8" class="ta-table-empty">
+                      <i class="fa-solid fa-spinner fa-spin"></i>
+                      Loading applications...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 1: ADD / EDIT JOB MODAL (Designed for non-technical users)
+       ========================================================================= -->
+  <div class="ta-modal-backdrop" id="ta-job-modal">
+    <div class="ta-modal">
+      <div class="ta-modal-header">
+        <h3 class="ta-modal-title" id="job-modal-title">Post New Job Opening</h3>
+        <button type="button" class="ta-modal-close" data-close-modal="ta-job-modal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="ta-job-form">
+        <input type="hidden" id="job-form-id" value="">
+
+        <div class="ta-modal-body">
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-title-inp">Job Title <span class="req">*</span></label>
+              <input type="text" id="job-title-inp" class="ta-form-input" placeholder="e.g. Senior React Developer" required>
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-dept-inp">Department <span class="req">*</span></label>
+              <select id="job-dept-inp" class="ta-form-select" required>
+                <option value="Engineering">Engineering</option>
+                <option value="AI & Data">AI &amp; Data</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="IT Consulting">IT Consulting</option>
+                <option value="Operations">Operations</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-loc-inp">Location <span class="req">*</span></label>
+              <input type="text" id="job-loc-inp" class="ta-form-input" placeholder="e.g. Remote / Pune or Hybrid" required>
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-type-inp">Employment Type <span class="req">*</span></label>
+              <select id="job-type-inp" class="ta-form-select" required>
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Contract">Contract</option>
+                <option value="Internship">Internship</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-exp-inp">Experience Required <span class="req">*</span></label>
+              <input type="text" id="job-exp-inp" class="ta-form-input" placeholder="e.g. 1–2 Years or Fresher" required>
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-salary-inp">Salary / CTC</label>
+              <input type="text" id="job-salary-inp" class="ta-form-input" placeholder="e.g. ₹5,00,000 - ₹8,00,000 P.A. (optional)">
+            </div>
+          </div>
+
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-deadline-inp">Application Deadline</label>
+              <input type="date" id="job-deadline-inp" class="ta-form-input">
+              <span class="ta-field-hint">Leave blank for rolling / open until filled.</span>
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="job-status-inp">Publish Status <span class="req">*</span></label>
+              <select id="job-status-inp" class="ta-form-select" required>
+                <option value="open">Open (Visible to public &amp; accept applications)</option>
+                <option value="closed">Closed (Hidden or marked closed)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="job-desc-inp">Short Job Description <span class="req">*</span></label>
+            <textarea id="job-desc-inp" class="ta-form-textarea" rows="3" placeholder="Overview of the role and what this person will accomplish..." required></textarea>
+          </div>
+
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="job-resp-inp">
+              Key Responsibilities
+              <span style="font-weight:400;color:var(--ta-text-muted);font-size:12px;">(Enter 1 item per line)</span>
+            </label>
+            <textarea id="job-resp-inp" class="ta-form-textarea" rows="4" placeholder="Build modern web applications using React and Node.js&#10;Design clean RESTful APIs and database schemas&#10;Collaborate with product designers and engineers"></textarea>
+            <span class="ta-field-hint"><i class="fa-solid fa-circle-info"></i> Each line will automatically turn into a formatted bullet point on the website.</span>
+          </div>
+
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="job-req-inp">
+              Required Qualifications &amp; Skills
+              <span style="font-weight:400;color:var(--ta-text-muted);font-size:12px;">(Enter 1 item per line)</span>
+            </label>
+            <textarea id="job-req-inp" class="ta-form-textarea" rows="4" placeholder="Strong proficiency in JavaScript/TypeScript and React&#10;Experience with MySQL, MongoDB, and Git workflows&#10;Excellent communication and problem-solving skills"></textarea>
+          </div>
+
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="job-pref-inp">
+              Preferred Qualifications
+              <span style="font-weight:400;color:var(--ta-text-muted);font-size:12px;">(Optional - 1 per line)</span>
+            </label>
+            <textarea id="job-pref-inp" class="ta-form-textarea" rows="2" placeholder="Experience with Next.js App Router&#10;Knowledge of AWS cloud services"></textarea>
+          </div>
+
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="job-ben-inp">
+              Benefits &amp; Perks
+              <span style="font-weight:400;color:var(--ta-text-muted);font-size:12px;">(Enter 1 item per line)</span>
+            </label>
+            <textarea id="job-ben-inp" class="ta-form-textarea" rows="3" placeholder="Competitive compensation with performance bonuses&#10;Flexible remote working options&#10;Comprehensive health insurance coverage&#10;Learning and certification sponsorship"></textarea>
+          </div>
+        </div>
+
+        <div class="ta-modal-footer">
+          <button type="button" class="ta-btn-secondary" data-close-modal="ta-job-modal">Cancel</button>
+          <button type="submit" id="ta-job-submit-btn" class="ta-btn-post-job">
+            <i class="fa-solid fa-floppy-disk"></i>
+            <span>Save Job Position</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: CANDIDATE APPLICATION DETAILS MODAL
+       ========================================================================= -->
+  <div class="ta-modal-backdrop" id="ta-candidate-modal">
+    <div class="ta-modal" style="max-width: 620px;">
+      <div class="ta-modal-header">
+        <h3 class="ta-modal-title">Candidate Profile &amp; Application</h3>
+        <button type="button" class="ta-modal-close" data-close-modal="ta-candidate-modal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="ta-modal-body">
+        <div style="background:var(--ta-body-bg);padding:18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--ta-border);">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+            <h2 id="cand-modal-name" style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-text-main);">Candidate Name</h2>
+            <span id="cand-modal-ref" style="font-family:monospace;font-size:12px;padding:3px 8px;border-radius:6px;background:rgba(200,0,110,0.1);color:var(--ta-primary);font-weight:700;">REF</span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:12px;font-size:13.5px;">
+            <div><strong>Applied Role:</strong> <span id="cand-modal-job" style="color:var(--ta-primary);font-weight:600;">Role</span></div>
+            <div><strong>Experience:</strong> <span id="cand-modal-exp">—</span></div>
+            <div><strong>Email:</strong> <a id="cand-modal-email" href="#" style="color:var(--ta-info);text-decoration:none;">—</a></div>
+            <div><strong>Phone:</strong> <a id="cand-modal-phone" href="#" style="color:var(--ta-info);text-decoration:none;">—</a></div>
+            <div><strong>Location:</strong> <span id="cand-modal-loc">—</span></div>
+            <div><strong>Submitted:</strong> <span id="cand-modal-date">—</span></div>
+          </div>
+
+          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--ta-border);display:flex;gap:14px;">
+            <a id="cand-modal-linkedin" href="#" target="_blank" class="ta-btn-secondary" style="font-size:12.5px;padding:6px 12px;display:none;">
+              <i class="fa-brands fa-linkedin" style="color:#0a66c2;"></i> LinkedIn
+            </a>
+            <a id="cand-modal-portfolio" href="#" target="_blank" class="ta-btn-secondary" style="font-size:12.5px;padding:6px 12px;display:none;">
+              <i class="fa-solid fa-globe"></i> Portfolio
+            </a>
+          </div>
+        </div>
+
+        <!-- Cover Letter -->
+        <div style="margin-bottom:20px;">
+          <h4 style="font-size:14px;font-weight:700;margin-bottom:8px;color:var(--ta-text-main);">
+            <i class="fa-solid fa-file-lines" style="color:var(--ta-primary);margin-right:6px;"></i> Cover Letter / Candidate Message:
+          </h4>
+          <div id="cand-modal-letter" style="background:var(--ta-body-bg);border:1px solid var(--ta-border);border-radius:10px;padding:14px;font-size:13.5px;line-height:1.6;color:var(--ta-text-main);white-space:pre-wrap;max-height:160px;overflow-y:auto;">
+            No message provided.
+          </div>
+        </div>
+
+        <!-- Resume Download Box -->
+        <div style="margin-bottom:24px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.25);border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:14px;">
+          <div>
+            <strong style="font-size:14px;color:#059669;display:block;">Resume / CV Document</strong>
+            <span id="cand-modal-resume-name" style="font-size:12px;color:var(--ta-text-muted);">filename.pdf</span>
+          </div>
+          <a id="cand-modal-resume-btn" href="#" target="_blank" class="ta-btn-secondary" style="border-color:#10b981;color:#059669;background:#ffffff;">
+            <i class="fa-solid fa-download"></i> View / Download
+          </a>
+        </div>
+
+        <!-- Recruiting Stage Selector -->
+        <div>
+          <label class="ta-form-label" for="cand-modal-status-select">Change Recruitment Stage:</label>
+          <div style="display:flex;gap:10px;">
+            <select id="cand-modal-status-select" class="ta-form-select" style="flex:1;">
+              <option value="New">New (Unreviewed)</option>
+              <option value="Reviewing">Reviewing</option>
+              <option value="Shortlisted">Shortlisted</option>
+              <option value="Interview">Interview Scheduled</option>
+              <option value="Selected">Selected / Offer Made</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+            <button type="button" id="cand-modal-save-status-btn" class="ta-btn-post-job" style="padding:10px 18px;">
+              Update Stage
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ta-modal-footer">
+        <button type="button" class="ta-btn-secondary" data-close-modal="ta-candidate-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 3: DELETE CONFIRMATION MODAL
+       ========================================================================= -->
+  <div class="ta-modal-backdrop" id="ta-confirm-modal">
+    <div class="ta-modal" style="max-width: 420px; text-align:center;">
+      <div class="ta-modal-body" style="padding: 32px 24px;">
+        <div style="width:60px;height:60px;border-radius:50%;background:rgba(239,68,68,0.1);color:#ef4444;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <h3 id="ta-confirm-title" style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;margin-bottom:8px;">Are you sure?</h3>
+        <p id="ta-confirm-desc" style="font-size:13.5px;color:var(--ta-text-muted);line-height:1.6;margin-bottom:24px;">
+          This action will permanently delete this record.
+        </p>
+
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <button type="button" class="ta-btn-secondary" data-close-modal="ta-confirm-modal" style="flex:1;">Cancel</button>
+          <button type="button" id="ta-confirm-action-btn" class="ta-btn-primary" style="background:#ef4444;border-color:#ef4444;flex:1;">
+            Yes, Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="ta-toast-container" id="ta-toast-container"></div>
+
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

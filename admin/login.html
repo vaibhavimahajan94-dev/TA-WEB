@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Sign In | Techno Amaze Careers Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+  <div class="ta-login-wrap">
+    <div class="ta-login-card">
+
+      <div class="ta-login-logo">
+        <a href="../index.html">
+          <img
+            src="https://technoamaze.technoamaze.in/wp-content/uploads/2026/07/cropped-01-1-300x214-removebg-preview-1.png"
+            alt="Techno Amaze"
+            onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<span style=&quot;font-family:Poppins,sans-serif;font-weight:900;font-size:22px;color:#C8006E&quot;>Techno<span style=&quot;color:#151726&quot;>Amaze</span></span>')">
+        </a>
+      </div>
+
+      <h1 class="ta-login-title">Recruitment Portal</h1>
+      <p class="ta-login-subtitle">Sign in to manage job openings and candidate applications</p>
+
+      <!-- Alert Box -->
+      <div id="ta-login-alert" class="ta-login-alert"></div>
+
+      <!-- Login Form -->
+      <form id="ta-admin-login-form">
+        <div class="ta-form-group">
+          <label class="ta-form-label" for="admin-username">Username or Email</label>
+          <input type="text" id="admin-username" class="ta-form-input" placeholder="admin@technoamaze.in" required
+            autocomplete="username">
+        </div>
+
+        <div class="ta-form-group">
+          <label class="ta-form-label" for="admin-password">Password</label>
+          <div class="ta-password-box">
+            <input type="password" id="admin-password" class="ta-form-input" placeholder="••••••••••••" required
+              autocomplete="current-password">
+            <button type="button" id="ta-toggle-pass-btn" class="ta-password-toggle" aria-label="Toggle password visibility">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" id="ta-login-btn" class="ta-btn-primary" style="margin-top: 10px;">
+          <span>Sign In to Dashboard</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <!-- Non-technical user helper note -->
+      <div style="margin-top:24px;padding:14px;background:rgba(200, 0, 110, 0.05);border:1px solid rgba(200, 0, 110, 0.15);border-radius:10px;text-align:left;font-size:12.5px;color:var(--ta-text-muted);line-height:1.6;">
+        <strong style="color:var(--ta-text-main);display:block;margin-bottom:3px;">
+          <i class="fa-solid fa-key" style="color:var(--ta-primary);margin-right:4px;"></i> Default Admin Credentials:
+        </strong>
+        <div><strong>Username:</strong> <code>admin@technoamaze.in</code> (or <code>admin</code>)</div>
+        <div><strong>Password:</strong> <code>Admin@Techno2026</code></div>
+      </div>
+
+      <div style="margin-top:22px;">
+        <a href="../careers.html" style="font-size:13px;color:var(--ta-text-muted);text-decoration:none;">
+          <i class="fa-solid fa-arrow-left" style="font-size:11px;margin-right:4px;"></i> Return to Public Website
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var form = document.getElementById('ta-admin-login-form');
+      var userInp = document.getElementById('admin-username');
+      var passInp = document.getElementById('admin-password');
+      var submitBtn = document.getElementById('ta-login-btn');
+      var alertBox = document.getElementById('ta-login-alert');
+      var togglePassBtn = document.getElementById('ta-toggle-pass-btn');
+
+      // Check if already logged in
+      var isLogged = sessionStorage.getItem('ta_admin_logged_in') === 'true';
+      if (isLogged) {
+        window.location.href = 'dashboard.html';
+        return;
+      }
+
+      // Password toggle
+      if (togglePassBtn && passInp) {
+        togglePassBtn.addEventListener('click', function () {
+          var isPass = passInp.getAttribute('type') === 'password';
+          passInp.setAttribute('type', isPass ? 'text' : 'password');
+          togglePassBtn.innerHTML = isPass ? '<i class="fa-regular fa-eye-slash"></i>' : '<i class="fa-regular fa-eye"></i>';
+        });
+      }
+
+      function showAlert(msg, isSuccess) {
+        alertBox.className = 'ta-login-alert ' + (isSuccess ? 'success' : 'danger');
+        alertBox.innerHTML = (isSuccess ? '<i class="fa-solid fa-circle-check"></i> ' : '<i class="fa-solid fa-circle-exclamation"></i> ') + msg;
+        alertBox.style.display = 'block';
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var u = userInp.value.trim();
+        var p = passInp.value.trim();
+
+        if (!u || !p) {
+          showAlert('Please enter both username and password.', false);
+          return;
+        }
+
+        submitBtn.setAttribute('disabled', 'disabled');
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Authenticating...';
+
+        // Attempt authentication via API
+        fetch('../api/auth.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'login', username: u, password: p })
+        })
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (data.success) {
+              sessionStorage.setItem('ta_admin_logged_in', 'true');
+              sessionStorage.setItem('ta_admin_user', u);
+              showAlert(data.message || 'Login successful!', true);
+              setTimeout(function () {
+                window.location.href = 'dashboard.html';
+              }, 700);
+            } else {
+              submitBtn.removeAttribute('disabled');
+              submitBtn.innerHTML = '<span>Sign In to Dashboard</span> <i class="fa-solid fa-arrow-right"></i>';
+              showAlert(data.message || 'Invalid username or password.', false);
+            }
+          })
+          .catch(function () {
+            // Local offline/preview fallback (e.g. running on local file:/// without PHP server)
+            if ((u.toLowerCase() === 'admin' || u.toLowerCase() === 'admin@technoamaze.in') && p === 'Admin@Techno2026') {
+              sessionStorage.setItem('ta_admin_logged_in', 'true');
+              sessionStorage.setItem('ta_admin_user', u);
+              showAlert('Login successful (Offline Preview Mode)', true);
+              setTimeout(function () {
+                window.location.href = 'dashboard.html';
+              }, 600);
+            } else {
+              submitBtn.removeAttribute('disabled');
+              submitBtn.innerHTML = '<span>Sign In to Dashboard</span> <i class="fa-solid fa-arrow-right"></i>';
+              showAlert('Invalid username or password. Check default credentials below.', false);
+            }
+          });
+      });
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Admin Portal...</title>
+  <script>
+    (function () {
+      if (sessionStorage.getItem('ta_admin_logged_in') === 'true') {
+        window.location.replace('dashboard.html');
+      } else {
+        window.location.replace('login.html');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;padding:40px;">Loading Admin Portal...</p>
+</body>
+</html>

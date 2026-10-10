@@ -1,0 +1,311 @@
+/*
+Theme Name: TechnoAmaze Corporate IT
+Theme URI: https://technoamaze.in
+Author: TechnoAmaze Development Team
+Author URI: https://technoamaze.in
+Description: Modern enterprise IT consulting, software engineering, AI solutions, careers and digital innovation WordPress theme for TechnoAmaze.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+Text Domain: technoamaze
+*/
+
+/* WordPress Core Alignment & Layout Classes */
+.alignwide {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.wp-block-group {
+  box-sizing: border-box;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* Ensure admin bar does not overlap header */
+body.admin-bar #ta-topbar {
+  margin-top: 0;
+}
+@media screen and (min-width: 783px) {
+  body.admin-bar #ta-header.scrolled {
+    top: 32px;
+  }
+}
+@media screen and (max-width: 782px) {
+  body.admin-bar #ta-header.scrolled {
+    top: 46px;
+  }
+}
+
+/* ==========================================================================
+   SINGLE JOB DETAILS PAGE & HERO
+   ========================================================================== */
+.ta-jd-hero,
+.ta-careers-hero {
+  position: relative;
+  padding: clamp(44px, 6vw, 70px) 0 clamp(32px, 4vw, 50px);
+  background: linear-gradient(180deg, var(--ta-surface, #f8f9fa) 0%, rgba(200, 0, 110, 0.04) 100%);
+  border-bottom: 1px solid var(--ta-border, #e5e7eb);
+  text-align: center;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .ta-jd-hero,
+[data-theme="dark"] .ta-careers-hero {
+  background: linear-gradient(180deg, #0e101a 0%, #151726 100%);
+}
+
+.ta-jd-hero-inner,
+.ta-careers-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 32px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.ta-breadcrumb,
+.ta-careers-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--ta-muted, #64748b);
+  margin: 0 auto 16px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.ta-breadcrumb a,
+.ta-careers-breadcrumb a {
+  color: var(--ta-muted, #64748b);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ta-breadcrumb a:hover,
+.ta-careers-breadcrumb a:hover {
+  color: var(--ta-accent, #c8006e);
+}
+
+.ta-breadcrumb-sep,
+.ta-breadcrumb .fa-chevron-right,
+.ta-careers-breadcrumb .sep {
+  font-size: 10px;
+  opacity: 0.6;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ta-breadcrumb-current,
+#ta-bc-job-title,
+.ta-breadcrumb span[aria-current="page"],
+.ta-careers-breadcrumb span[aria-current="page"] {
+  color: var(--ta-accent, #c8006e);
+  font-weight: 600;
+}
+
+.ta-jd-hero-title,
+.ta-careers-hero-title,
+.ta-careers-hero-inner h1,
+.ta-careers-hero-inner h2 {
+  font-family: var(--ta-font-head, 'Poppins', sans-serif);
+  font-size: clamp(24px, 3.6vw, 38px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--ta-ink, #0f172a);
+  margin: 0 auto 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.ta-jd-hero-desc,
+.ta-careers-hero-desc,
+.ta-careers-hero-inner p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: clamp(14.5px, 1.15vw, 16.5px);
+  line-height: 1.65;
+  color: var(--ta-muted, #64748b);
+  text-align: center;
+  width: 100%;
+}
+
+.ta-job-details-page {
+  padding: clamp(36px, 5vw, 60px) 0 clamp(60px, 8vw, 100px);
+  background: var(--ta-surface, #f8f9fa);
+}
+
+.ta-job-details-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 36px);
+}
+
+.ta-job-details-header {
+  background: var(--ta-card-bg, #ffffff);
+  border: 1px solid var(--ta-border, #e5e7eb);
+  border-radius: 18px;
+  padding: clamp(24px, 4vw, 38px);
+  margin-bottom: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.ta-job-details-title {
+  font-family: var(--ta-font-head, 'Poppins', sans-serif);
+  font-size: clamp(24px, 3.2vw, 36px);
+  font-weight: 800;
+  color: var(--ta-ink, #0f172a);
+  line-height: 1.25;
+  margin: 0 0 16px 0;
+  word-break: break-word;
+}
+
+.ta-job-meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 24px;
+  font-size: 13.5px;
+  color: var(--ta-muted, #64748b);
+}
+
+.ta-job-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--ta-surface, #f8f9fa);
+  border: 1px solid var(--ta-border, #e5e7eb);
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+
+.ta-job-meta-item i {
+  color: var(--ta-accent, #c8006e);
+  font-size: 12.5px;
+}
+
+.ta-job-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ta-job-header-actions .ta-btn-apply {
+  padding: 13px 32px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ta-job-header-actions .ta-btn-details {
+  padding: 13px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ta-job-details-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .ta-job-details-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .ta-job-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .ta-jd-hero,
+  .ta-careers-hero {
+    padding: 38px 0 28px;
+  }
+  .ta-jd-hero-title,
+  .ta-careers-hero-title,
+  .ta-careers-hero-inner h1,
+  .ta-careers-hero-inner h2 {
+    font-size: clamp(22px, 5.5vw, 28px);
+    margin-bottom: 10px;
+  }
+  .ta-jd-hero-desc,
+  .ta-careers-hero-desc,
+  .ta-careers-hero-inner p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .ta-job-details-page {
+    padding: 24px 0 60px;
+  }
+  .ta-job-details-header {
+    padding: 22px 18px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+  }
+  .ta-job-details-title {
+    font-size: clamp(20px, 5vw, 26px);
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ta-job-header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .ta-job-header-actions .ta-btn-apply,
+  .ta-job-header-actions .ta-btn-details {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .ta-job-meta-list {
+    gap: 8px 10px;
+  }
+  .ta-job-meta-item {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,1114 @@
+<?php
+/**
+ * Template Name: Home
+ * Description: Custom template for Home page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+
+  <!-- HERO -->
+  <section id="ta-hero" aria-label="Hero">
+    <div class="ta-hero-particles" aria-hidden="true" id="ta-hero-particles"></div>
+    <div class="ta-hero-grid" aria-hidden="true"></div>
+
+    <div class="ta-hero-inner">
+      <div class="ta-hero-left">
+        <div class="ta-hero-eyebrow" aria-hidden="true">
+          <span class="ta-hero-eyebrow-dot"></span>
+          <span>Building Digital Excellence Since 2016</span>
+        </div>
+
+        <h1 class="ta-hero-heading">
+          <span class="ta-hero-h1-line1">We Transform</span>
+          <span class="ta-hero-h1-gradient">Ideas Into</span>
+          <span class="ta-hero-h1-outline">
+            <span class="stroke">Digital</span>&nbsp;<span class="solid">Reality<span
+                class="ta-hero-cursor"></span></span>
+          </span>
+        </h1>
+
+        <p class="ta-hero-desc">We design, develop and deliver secure, scalable software that empowers businesses and
+          creates meaningful impact across every industry worldwide.</p>
+
+        <div class="ta-hero-cta">
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="ta-btn-hero-primary" id="hero-cta-primary">
+            Let&rsquo;s Build Together
+            <span class="btn-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" />
+              </svg>
+            </span>
+          </a>
+          <a href="<?php echo esc_url(home_url('/about/')); ?>" class="ta-hero-play" id="hero-cta-secondary">
+            <span class="ta-play-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+            View Our Work
+          </a>
+        </div>
+
+        <div class="ta-hero-trust">
+          <div class="ta-hero-trust-item">
+            <strong>500+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div class="ta-hero-trust-divider"></div>
+          <div class="ta-hero-trust-item">
+            <strong>120K+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="ta-hero-trust-divider"></div>
+          <div class="ta-hero-trust-item">
+            <strong>10+</strong>
+            <span>Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ta-scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="ta-scroll-mouse">
+        <div class="ta-scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section id="ta-feat-cards" aria-label="Feature highlights">
+    <div class="ta-feat-cards-grid" data-reveal-group>
+      <div class="ta-feat-card">
+        <div class="ta-feat-card-body">
+          <div class="ta-feat-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Perfect IT Solutions</h3>
+          <p>Smart, tailored technology strategies designed to solve your unique business challenges and drive growth.
+          </p>
+        </div>
+        <img class="ta-feat-card-img"
+          src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/perfect_it_solutions.png?v=1.0.4'); ?>" alt="Perfect IT Solutions"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="ta-feat-card">
+        <div class="ta-feat-card-body">
+          <div class="ta-feat-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Growth-Focused Strategy</h3>
+          <p>Data-driven decisions and scalable architectures that unlock your full growth potential in the market.</p>
+        </div>
+        <img class="ta-feat-card-img"
+          src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/growth_focused_strategy.png?v=1.0.4'); ?>" alt="Growth-Focused Strategy"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="ta-feat-card">
+        <div class="ta-feat-card-body">
+          <div class="ta-feat-icon-box"><i class="fa-solid fa-gears"></i></div>
+          <h3>Global IT Support</h3>
+          <p>Round-the-clock expert assistance keeping your operations running smoothly worldwide, every day.</p>
+        </div>
+        <img class="ta-feat-card-img"
+          src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/global_it_support.png?v=1.0.4'); ?>"
+          alt="Global IT Support" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="ta-about" class="ta-section-reveal" aria-labelledby="about-heading">
+    <div class="ta-about-inner">
+      <div class="ta-about-media" data-reveal="left">
+        <div class="ta-about-img-top">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80"
+            alt="Team meeting">
+        </div>
+        <div class="ta-about-img-bot">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80"
+            alt="Designer working">
+        </div>
+      </div>
+      <div class="ta-about-content" data-reveal="right">
+        <div class="ta-eyebrow">About Us</div>
+        <h2 class="ta-section-title" id="about-heading">Provide the Best Easy Solution for Your IT Problem</h2>
+        <p class="ta-section-desc">We are a passionate team of engineers, designers, and strategists committed to
+          delivering technology solutions that make a real difference. Since 2016, we have helped 500+ businesses
+          transform their operations with custom software, AI, and cloud-native architectures.</p>
+        <div class="ta-about-feats">
+          <div class="ta-about-feat">
+            <div class="ta-about-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                width="22" height="22">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg></div>
+            <h3>Managed Tech Services</h3>
+            <p>End-to-end management of your technology ecosystem</p>
+          </div>
+          <div class="ta-about-feat">
+            <div class="ta-about-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                width="22" height="22">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg></div>
+            <h3>IT Consulting</h3>
+            <p>Expert guidance to drive smarter digital decisions</p>
+          </div>
+        </div>
+        <hr class="ta-about-hr">
+        <div class="ta-about-bottom">
+          <div class="ta-about-bottom-left">
+            <ul class="ta-about-list">
+              <li><span class="ta-about-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"
+                    stroke-linecap="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg></span>Award-winning design &amp; development team</li>
+              <li><span class="ta-about-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"
+                    stroke-linecap="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg></span>500+ successful projects delivered globally</li>
+              <li><span class="ta-about-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"
+                    stroke-linecap="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg></span>24/7 support &amp; dedicated account managers</li>
+            </ul>
+            <a href="<?php echo esc_url(home_url('/about/')); ?>" class="ta-btn ta-btn-dark">Discover More</a>
+          </div>
+          <div class="ta-about-award">
+            <div class="ta-about-award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" width="40"
+                height="40">
+                <path d="M8 21h8" />
+                <path d="M12 17v4" />
+                <path d="M7 4h10v6a5 5 0 0 1-10 0z" />
+                <path d="M7 5H4a1 1 0 0 0-1 1v1a4 4 0 0 0 4 4" />
+                <path d="M17 5h3a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4" />
+              </svg>
+            </div>
+            <p>Award Winning Agency</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER STRIP (between About & Services) -->
+  <div id="ta-ticker" aria-hidden="true">
+    <div class="ta-ticker-track" id="ta-ticker-track">
+      <span class="ta-ticker-item">Latest AI Technology <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Digital Marketing <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Navigating IT Solutions <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Modern Technology Service <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Deliver Perfect Results <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Cloud Infrastructure <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Cybersecurity Excellence <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Scalable Software Solutions <span class="ta-ticker-sep">&#10022;</span></span>
+      <!-- duplicated for seamless loop -->
+      <span class="ta-ticker-item">Latest AI Technology <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Digital Marketing <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Navigating IT Solutions <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Modern Technology Service <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Deliver Perfect Results <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Cloud Infrastructure <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Cybersecurity Excellence <span class="ta-ticker-sep">&#10022;</span></span>
+      <span class="ta-ticker-item">Scalable Software Solutions <span class="ta-ticker-sep">&#10022;</span></span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="ta-services" class="ta-section-reveal" aria-labelledby="services-heading">
+    <div class="ta-services-inner">
+      <div class="ta-services-header">
+        <div class="ta-services-header-left" data-reveal>
+          <div class="ta-eyebrow">Services</div>
+          <h2 class="ta-section-title" id="services-heading">Services We're Providing to Our Customers</h2>
+        </div>
+        <div class="ta-services-header-right" data-reveal>
+          <p class="ta-section-desc">From custom software and cloud infrastructure to digital marketing and AI — we deliver end-to-end solutions built around your business goals.</p>
+          <div class="ta-svc-controls">
+            <a href="<?php echo esc_url(home_url('/services/')); ?>" class="ta-btn ta-btn-dark ta-svc-viewall">View All Services</a>
+            <button class="ta-svc-arrow" id="ta-svc-prev" aria-label="Previous">&#8592;</button>
+            <div class="ta-svc-counter"><b id="ta-svc-cur">1</b> / <span id="ta-svc-tot">3</span></div>
+            <button class="ta-svc-arrow" id="ta-svc-next" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+      </div>
+      <div class="ta-svc-viewport">
+        <div class="ta-svc-track" id="ta-svc-track"></div>
+      </div>
+      <div class="ta-svc-dots" id="ta-svc-dots"></div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT PROCESS -->
+  <section id="ta-process" class="ta-section-reveal" aria-labelledby="process-heading">
+    <div class="ta-process-inner">
+      <div class="ta-process-header" data-reveal>
+        <div class="ta-eyebrow">How We Work</div>
+        <h2 class="ta-section-title ta-section-title--white" id="process-heading">Our Development Process</h2>
+        <p class="ta-section-desc">We follow a proven, transparent methodology to transform your vision into a
+          high-quality digital product — on time and within budget.</p>
+      </div>
+      <div class="ta-process-timeline" data-reveal-group>
+        <div class="ta-process-step">
+          <div class="ta-process-num-wrap">
+            <div class="ta-process-num-bg"></div>
+            <div class="ta-process-num-ring"></div>
+            <div class="ta-process-num">01</div>
+            <div class="ta-process-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <h3 class="ta-process-title">Discovery &amp; Research</h3>
+          <p class="ta-process-desc">We deep-dive into your business goals, target users, and competitive landscape to
+            build a crystal-clear project roadmap.</p>
+        </div>
+        <div class="ta-process-step">
+          <div class="ta-process-num-wrap">
+            <div class="ta-process-num-bg"></div>
+            <div class="ta-process-num-ring"></div>
+            <div class="ta-process-num">02</div>
+            <div class="ta-process-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+          </div>
+          <h3 class="ta-process-title">Design &amp; Prototype</h3>
+          <p class="ta-process-desc">Our UX designers create wireframes and interactive prototypes so you can see and
+            feel the product before a single line of code is written.</p>
+        </div>
+        <div class="ta-process-step">
+          <div class="ta-process-num-wrap">
+            <div class="ta-process-num-bg"></div>
+            <div class="ta-process-num-ring"></div>
+            <div class="ta-process-num">03</div>
+            <div class="ta-process-icon"><i class="fa-solid fa-code"></i></div>
+          </div>
+          <h3 class="ta-process-title">Development &amp; QA</h3>
+          <p class="ta-process-desc">Agile sprints, rigorous testing, and continuous integration ensure every feature is
+            built right with zero regressions.</p>
+        </div>
+        <div class="ta-process-step">
+          <div class="ta-process-num-wrap">
+            <div class="ta-process-num-bg"></div>
+            <div class="ta-process-num-ring"></div>
+            <div class="ta-process-num">04</div>
+            <div class="ta-process-icon"><i class="fa-solid fa-rocket"></i></div>
+          </div>
+          <h3 class="ta-process-title">Launch &amp; Support</h3>
+          <p class="ta-process-desc">We handle deployment, post-launch monitoring, and ongoing support so your product
+            stays performant, secure, and evolving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEATOPRO PRODUCT SHOWCASE -->
+  <section id="ta-seatopro" class="ta-section-reveal" aria-labelledby="seatopro-heading">
+    <div class="ta-sp-inner">
+      <div class="ta-sp-header" data-reveal>
+        <div class="ta-eyebrow ta-eyebrow--center">Flagship Product</div>
+        <h2 class="ta-section-title" id="seatopro-heading">Meet <span class="ta-highlight-text">Seato Pro</span> — Smart
+          Library Management Platform</h2>
+        <p class="ta-section-desc ta-section-desc--center">An end-to-end cloud ecosystem designed for modern libraries
+          and reading rooms to automate seat allocations, student subscriptions, attendance, and revenue tracking.</p>
+      </div>
+
+      <div class="ta-sp-grid">
+        <!-- LEFT: REAL DASHBOARD SHOWCASE STAGE -->
+        <div class="ta-sp-mockup" data-reveal="left">
+          <div class="ta-sp-frame">
+            <div class="ta-sp-frame-bar">
+              <span class="ta-sp-dot red"></span>
+              <span class="ta-sp-dot yellow"></span>
+              <span class="ta-sp-dot green"></span>
+              <span class="ta-sp-frame-url">seatopro.technoamaze.in</span>
+            </div>
+            <div class="ta-sp-frame-body">
+              <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/seatopro_dashboard.png?v=1.0.4'); ?>" alt="Seato Pro Library Management Platform Dashboard"
+                class="ta-sp-img" loading="lazy" decoding="async">
+            </div>
+            <div class="ta-sp-badge-float top-right">
+              <div class="ta-sp-badge-icon yellow"><i class="fa-solid fa-star"></i></div>
+              <div class="ta-sp-badge-info">
+                <strong>4.8 Rating</strong>
+                <span>Google Play Store</span>
+              </div>
+            </div>
+            <div class="ta-sp-badge-float bottom-left">
+              <div class="ta-sp-badge-icon dark"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="ta-sp-badge-info">
+                <strong>500+ Libraries</strong>
+                <span>Active Organizations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: FEATURES CONTENT -->
+        <div class="ta-sp-features" data-reveal="right">
+          <div class="ta-eyebrow">All-In-One SaaS Solution</div>
+          <h3 class="ta-sp-right-title">Everything Your Library Needs, In One Intelligent Platform</h3>
+          <p class="ta-section-desc">Seato Pro eliminates paper registers, seat disputes, and fee delays. Empower your
+            management team with real-time floor maps, automated renewal alerts, and instant online payments.</p>
+
+          <div class="ta-sp-feat-list">
+            <div class="ta-sp-feat-item">
+              <div class="ta-sp-feat-icon"><i class="fa-solid fa-chair"></i></div>
+              <div class="ta-sp-feat-text">
+                <h4 class="ta-sp-feat-title">Visual Floor &amp; Seat Allocation</h4>
+                <p>Interactive seat mapping with real-time occupancy status, shift management, and instant seat swaps.
+                </p>
+              </div>
+            </div>
+            <div class="ta-sp-feat-item">
+              <div class="ta-sp-feat-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div class="ta-sp-feat-text">
+                <h4 class="ta-sp-feat-title">Student Directory &amp; Digital IDs</h4>
+                <p>Centralized student profiles, attendance history, document uploads, and automated QR pass generation.
+                </p>
+              </div>
+            </div>
+            <div class="ta-sp-feat-item">
+              <div class="ta-sp-feat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+              <div class="ta-sp-feat-text">
+                <h4 class="ta-sp-feat-title">Automated Subscriptions &amp; Payments</h4>
+                <p>Set up flexible monthly plans, send automated WhatsApp/SMS expiry alerts, and collect fees digitally.
+                </p>
+              </div>
+            </div>
+            <div class="ta-sp-feat-item">
+              <div class="ta-sp-feat-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="ta-sp-feat-text">
+                <h4 class="ta-sp-feat-title">Business Analytics &amp; Reports</h4>
+                <p>Actionable dashboards tracking monthly revenue, seat occupancy percentage, and peak study hours.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ta-sp-cta-row" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+            <a href="<?php echo esc_url(home_url('/products/seatopro/')); ?>" class="ta-btn ta-btn-dark">
+              <i class="fa-solid fa-circle-info"></i>
+              Explore Seato Pro
+            </a>
+            <a href="https://seatopro.technoamaze.in/" target="_blank" rel="noopener" class="ta-btn ta-btn-ghost">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Live Web App
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FEATURE CARDS -->
+      <div class="ta-sp-cards-grid" data-reveal-group>
+        <div class="ta-sp-card">
+          <div class="ta-sp-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 class="ta-sp-card-title">Native Mobile App</h3>
+          <p>Ultra-fast Android application optimized for institute owners, staff, and student self-service.</p>
+        </div>
+        <div class="ta-sp-card">
+          <div class="ta-sp-card-icon"><i class="fa-solid fa-bell"></i></div>
+          <h3 class="ta-sp-card-title">Smart Reminders</h3>
+          <p>Automated push notifications for seat bookings, fee dues, library rules, and announcements.</p>
+        </div>
+        <div class="ta-sp-card">
+          <div class="ta-sp-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="ta-sp-card-title">Role Security</h3>
+          <p>Multi-tenant architecture with encrypted cloud storage, daily backups, and role-based permissions.</p>
+        </div>
+        <div class="ta-sp-card">
+          <div class="ta-sp-card-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+          <h3 class="ta-sp-card-title">Instant Sync</h3>
+          <p>Real-time WebSockets synchronization between mobile apps, admin tablets, and cloud web portals.</p>
+        </div>
+      </div>
+
+      <!-- STATS STRIP -->
+      <div class="ta-sp-stats" data-reveal>
+        <div class="ta-sp-stat-item">
+          <strong>500+</strong>
+          <span>Libraries Onboarded</span>
+        </div>
+        <div class="ta-sp-stat-item">
+          <strong>50K+</strong>
+          <span>Active Student Users</span>
+        </div>
+        <div class="ta-sp-stat-item">
+          <strong>4.8★</strong>
+          <span>Play Store Rating</span>
+        </div>
+        <div class="ta-sp-stat-item">
+          <strong>99.9%</strong>
+          <span>Platform Uptime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section id="ta-industries" class="ta-section-reveal" aria-labelledby="industries-heading">
+    <div class="ta-industries-inner">
+      <div class="ta-ind-header-wrap" data-reveal>
+        <div class="ta-ind-header-left">
+          <div class="ta-eyebrow">Industries We Serve</div>
+          <h2 class="ta-section-title ta-section-title--white" id="industries-heading">Powering Growth Across Every
+            Sector</h2>
+          <p class="ta-section-desc">From healthcare to fintech, we bring deep industry expertise combined with
+            cutting-edge technology to deliver solutions that truly matter.</p>
+        </div>
+        <div class="ta-ind-controls">
+          <button class="ta-ind-arrow" id="ta-ind-prev" aria-label="Previous industry slide">&#8592;</button>
+          <div class="ta-ind-counter"><b id="ta-ind-cur">1</b> / <span id="ta-ind-tot">5</span></div>
+          <button class="ta-ind-arrow" id="ta-ind-next" aria-label="Next industry slide">&#8594;</button>
+        </div>
+      </div>
+      <div class="ta-ind-viewport" data-reveal>
+        <div class="ta-ind-track" id="ta-ind-track">
+          <a href="<?php echo esc_url(home_url('/industries/healthcare/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&q=80"
+              alt="Healthcare & MedTech" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Healthcare &amp; MedTech</h3>
+              <p class="ta-ind-desc">HIPAA-compliant platforms, telemedicine, patient portals, and AI diagnostics for
+                modern care.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/fintech/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop&q=80"
+              alt="Finance & Banking" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-landmark"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Finance &amp; Banking</h3>
+              <p class="ta-ind-desc">Fintech apps, payment gateways, fraud detection, and regulatory compliance
+                platforms.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/ecommerce/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=800&fit=crop&q=80"
+              alt="E-Commerce & Retail" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">E-Commerce &amp; Retail</h3>
+              <p class="ta-ind-desc">Scalable storefronts, inventory tools, recommendation engines, and omnichannel
+                experiences.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/edtech/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=800&fit=crop&q=80"
+              alt="Education & EdTech" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Education &amp; EdTech</h3>
+              <p class="ta-ind-desc">LMS platforms, gamified learning, and AI-powered personalised tutoring solutions.
+              </p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/manufacturing/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=800&fit=crop&q=80"
+              alt="Manufacturing & IoT" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-industry"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Manufacturing &amp; IoT</h3>
+              <p class="ta-ind-desc">Smart factory automation, predictive maintenance, IoT dashboards, and AI vision
+                inspection.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/travel/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=800&fit=crop&q=80"
+              alt="Travel & Hospitality" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-plane"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Travel &amp; Hospitality</h3>
+              <p class="ta-ind-desc">Booking systems, CRM platforms, dynamic pricing, and AI concierge solutions.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/logistics/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=800&fit=crop&q=80"
+              alt="Logistics & Supply Chain" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Logistics &amp; Supply Chain</h3>
+              <p class="ta-ind-desc">Real-time tracking, route optimisation, warehouse management, and predictive
+                analytics.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="<?php echo esc_url(home_url('/industries/realestate/')); ?>" class="ta-ind-card" style="text-decoration:none;">
+            <img class="ta-ind-img"
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=800&fit=crop&q=80"
+              alt="Real Estate & PropTech" loading="lazy">
+            <div class="ta-ind-overlay"></div>
+            <div class="ta-ind-icon"><i class="fa-solid fa-building"></i></div>
+            <div class="ta-ind-body">
+              <h3 class="ta-ind-title">Real Estate &amp; PropTech</h3>
+              <p class="ta-ind-desc">Smart grid monitoring, energy analytics dashboards, compliance tracking, and
+                sustainability tools.</p>
+            </div>
+            <div class="ta-ind-corner"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="ta-ind-dots" id="ta-ind-dots"></div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES SECTION - IMAGE CARD LAYOUT -->
+  <section id="ta-casestudy" class="ta-section-reveal" aria-labelledby="casestudy-heading">
+    <div class="ta-cs2-inner">
+      <div class="ta-cs2-header" data-reveal>
+        <div class="ta-eyebrow ta-eyebrow--center">Case Studies &amp; Proven Success</div>
+        <h2 class="ta-section-title" id="casestudy-heading">Real Client Impact &amp; <span class="ta-highlight-text">Success Stories</span></h2>
+        <p class="ta-section-desc ta-section-desc--center">We've helped businesses across industries ship faster, grow smarter, and lead with technology. Explore our impact.</p>
+      </div>
+
+      <div class="ta-cs2-grid" data-reveal-group>
+
+        <!-- CARD 1: SEATOPRO PRODUCT -->
+        <article class="ta-cs2-card">
+          <div class="ta-cs2-card-img-wrap">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/seato_image_one.jpg?v=1.0.5'); ?>" alt="Seato Pro Library SaaS Case Study" class="ta-cs2-card-img" loading="lazy" decoding="async">
+            <div class="ta-cs2-card-overlay"></div>
+            <div class="ta-cs2-card-tag featured">In-House Product</div>
+          </div>
+          <div class="ta-cs2-card-body">
+            <div class="ta-cs2-card-client">
+              <span class="ta-cs2-client-logo accent">SP</span>
+              <div>
+                <strong>Seato Pro</strong>
+                <span>Library Management SaaS</span>
+              </div>
+            </div>
+            <h3 class="ta-cs2-card-title">500+ Libraries Onboarded with Real-Time Seat Engine</h3>
+            <p class="ta-cs2-card-desc">Built from scratch — a cloud SaaS serving 50K+ students daily with live seat maps, automated billing, and 99.9% uptime.</p>
+            <div class="ta-cs2-metrics-row">
+              <div class="ta-cs2-metric"><strong>500+</strong><span>Libraries</span></div>
+              <div class="ta-cs2-metric"><strong>50K+</strong><span>Students</span></div>
+              <div class="ta-cs2-metric"><strong>99.9%</strong><span>Uptime</span></div>
+            </div>
+            <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;">
+              <a href="https://play.google.com/store/apps/details?id=com.technoamaze.seato_pro&hl=en_IN" target="_blank" rel="noopener" class="ta-cs2-card-btn" style="background:var(--ta-accent);color:#ffffff;"><i class="fa-brands fa-google-play"></i> Play Store App</a>
+              <a href="<?php echo esc_url(home_url('/products/seatopro/')); ?>" class="ta-cs2-card-btn">Explore Seato Pro <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: TECHNO AMAZE ACADEMY PRODUCT -->
+        <article class="ta-cs2-card">
+          <div class="ta-cs2-card-img-wrap">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/academy_one_img.jpg?v=1.0.5'); ?>" alt="Techno Amaze Academy EdTech App Case Study" class="ta-cs2-card-img" loading="lazy" decoding="async">
+            <div class="ta-cs2-card-overlay"></div>
+            <div class="ta-cs2-card-tag featured">In-House EdTech Product</div>
+          </div>
+          <div class="ta-cs2-card-body">
+            <div class="ta-cs2-card-client">
+              <span class="ta-cs2-client-logo accent">TA</span>
+              <div>
+                <strong>Techno Amaze Academy</strong>
+                <span>EdTech &amp; LMS Mobile App</span>
+              </div>
+            </div>
+            <h3 class="ta-cs2-card-title">100K+ Active Students Empowered with Mobile LMS App</h3>
+            <p class="ta-cs2-card-desc">Comprehensive Android LMS app published on Google Play — serving 250+ institutes with HD live classes, online test series, and automated WhatsApp parent score alerts.</p>
+            <div class="ta-cs2-metrics-row">
+              <div class="ta-cs2-metric"><strong>100K+</strong><span>Learners</span></div>
+              <div class="ta-cs2-metric"><strong>250+</strong><span>Institutes</span></div>
+              <div class="ta-cs2-metric"><strong>4.9★</strong><span>Play Store</span></div>
+            </div>
+            <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;">
+              <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank" rel="noopener" class="ta-cs2-card-btn" style="background:var(--ta-accent);color:#ffffff;"><i class="fa-brands fa-google-play"></i> Download Academy App</a>
+              <a href="<?php echo esc_url(home_url('/products/academy/')); ?>" class="ta-cs2-card-btn">Explore Academy App <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3: WEB DEVELOPMENT -->
+        <article class="ta-cs2-card">
+          <div class="ta-cs2-card-img-wrap">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/cs_webdev.png?v=1.0.4'); ?>" alt="MediMarket Web Development Case Study" class="ta-cs2-card-img" loading="lazy" decoding="async">
+            <div class="ta-cs2-card-overlay"></div>
+            <div class="ta-cs2-card-tag">Web Development</div>
+          </div>
+          <div class="ta-cs2-card-body">
+            <div class="ta-cs2-card-client">
+              <span class="ta-cs2-client-logo">MM</span>
+              <div>
+                <strong>MediMarket Global</strong>
+                <span>Healthcare &amp; E-Commerce</span>
+              </div>
+            </div>
+            <h3 class="ta-cs2-card-title">240% Conversion Boost with Headless Next.js Rebuild</h3>
+            <p class="ta-cs2-card-desc">Replaced a slow legacy PHP storefront with a Next.js headless architecture — delivering 0.8s page loads and 3.5x mobile order growth.</p>
+            <div class="ta-cs2-metrics-row">
+              <div class="ta-cs2-metric"><strong>240%</strong><span>Conversion Rate</span></div>
+              <div class="ta-cs2-metric"><strong>0.8s</strong><span>Page Load</span></div>
+              <div class="ta-cs2-metric"><strong>3.5x</strong><span>Mobile Orders</span></div>
+            </div>
+            <a href="#ta-contact" class="ta-cs2-card-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- CARD 4: APP DEVELOPMENT -->
+        <article class="ta-cs2-card">
+          <div class="ta-cs2-card-img-wrap">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/cs_appdev.png?v=1.0.4'); ?>" alt="PayPulse Finance App Development Case Study" class="ta-cs2-card-img" loading="lazy" decoding="async">
+            <div class="ta-cs2-card-overlay"></div>
+            <div class="ta-cs2-card-tag">App Development</div>
+          </div>
+          <div class="ta-cs2-card-body">
+            <div class="ta-cs2-card-client">
+              <span class="ta-cs2-client-logo">PP</span>
+              <div>
+                <strong>PayPulse Finance</strong>
+                <span>FinTech &amp; Banking</span>
+              </div>
+            </div>
+            <h3 class="ta-cs2-card-title">100K+ Users with AI-Powered KYC Flutter App</h3>
+            <p class="ta-cs2-card-desc">Rebuilt a crash-prone native app into a unified Flutter platform with 2-minute AI KYC onboarding and biometric security.</p>
+            <div class="ta-cs2-metrics-row">
+              <div class="ta-cs2-metric"><strong>100K+</strong><span>Daily Users</span></div>
+              <div class="ta-cs2-metric"><strong>85%</strong><span>KYC Rate</span></div>
+              <div class="ta-cs2-metric"><strong>4.9★</strong><span>App Store</span></div>
+            </div>
+            <a href="#ta-contact" class="ta-cs2-card-btn">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- CTA STRIP -->
+      <div class="ta-cs2-cta" data-reveal>
+        <div class="ta-cs2-cta-text">
+          <h3>Ready to create your next <span>Success Story</span> with Techno Amaze?</h3>
+          <p>From idea to launch — we're with you every step of the way.</p>
+        </div>
+        <a href="#ta-contact" class="ta-btn ta-btn-primary">Start Your Project &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHY US + STATS -->
+  <section id="ta-whyus" class="ta-section-reveal" aria-labelledby="whyus-heading">
+    <div class="ta-whyus-inner">
+      <div class="ta-stats-grid" data-reveal-group>
+        <div class="ta-stat">
+          <div class="ta-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C8006E" stroke-width="2" width="20"
+              height="20">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <p class="ta-stat-num">120K+</p>
+          <p class="ta-stat-label">Satisfied Clients</p>
+        </div>
+        <div class="ta-stat">
+          <div class="ta-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C8006E" stroke-width="2" width="20"
+              height="20">
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15.5 15.5" />
+            </svg></div>
+          <p class="ta-stat-num">30K+</p>
+          <p class="ta-stat-label">Projects Completed</p>
+        </div>
+        <div class="ta-stat">
+          <div class="ta-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C8006E" stroke-width="2" width="20"
+              height="20">
+              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3z" />
+              <path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+            </svg></div>
+          <p class="ta-stat-num">500K+</p>
+          <p class="ta-stat-label">Five Star Reviews</p>
+        </div>
+        <div class="ta-stat">
+          <div class="ta-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C8006E" stroke-width="2" width="20"
+              height="20">
+              <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+            </svg></div>
+          <p class="ta-stat-num">90+</p>
+          <p class="ta-stat-label">Pro Team Members</p>
+        </div>
+      </div>
+      <div class="ta-whyus-content">
+        <div class="ta-whyus-left" data-reveal="left">
+          <div class="ta-eyebrow">Why Choose Us</div>
+          <h2 class="ta-section-title ta-section-title--white" id="whyus-heading">Why Our Technology Solutions Company
+            Stands Out?</h2>
+          <div class="ta-whyus-feature">
+            <div class="ta-whyus-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                width="20" height="20">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg></div>
+            <div class="ta-whyus-feat-text">
+              <p>Navigating IT Solutions with Precision &amp; Excellence</p>
+            </div>
+            <div class="ta-whyus-feat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                width="16" height="16">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+          <div class="ta-whyus-feature">
+            <div class="ta-whyus-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                width="20" height="20">
+                <path d="M9 18h6" />
+                <path d="M10 22h4" />
+                <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1v.2h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z" />
+              </svg></div>
+            <div class="ta-whyus-feat-text">
+              <p>Resolving Your Technology Woes with Expert Care</p>
+            </div>
+            <div class="ta-whyus-feat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                width="16" height="16">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+          <div class="ta-whyus-feature">
+            <div class="ta-whyus-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                width="20" height="20">
+                <path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg></div>
+            <div class="ta-whyus-feat-text">
+              <p>Secure and Reliable Data Protection at Every Level</p>
+            </div>
+            <div class="ta-whyus-feat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                width="16" height="16">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+          <div class="ta-whyus-feature">
+            <div class="ta-whyus-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                width="20" height="20">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <div class="ta-whyus-feat-text">
+              <p>Round the Clock Dedicated Support &amp; Monitoring</p>
+            </div>
+            <div class="ta-whyus-feat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                width="16" height="16">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </div>
+        <div class="ta-whyus-right" data-reveal="right">
+          <p class="ta-section-desc">Our team of certified engineers, creative strategists, and business analysts brings
+            together a rare combination of technical depth and commercial acumen delivering solutions that do not just
+            work, but win.</p>
+          <div class="ta-whyus-media">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+              alt="IT professional at desk">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ta-whyus-cta">
+      <h3>Get The Best IT Solutions &amp; Services for Your Business</h3>
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="ta-cta-btn">Get In Touch &#8594;</a>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="ta-tech" class="ta-section-reveal" aria-labelledby="tech-heading">
+    <div class="ta-tech-inner">
+      <div class="ta-eyebrow" style="justify-content:center" data-reveal>Our Tech Stack</div>
+      <h2 class="ta-section-title" id="tech-heading" data-reveal>Technologies &amp; Tools We Use</h2>
+      <p class="ta-section-desc" style="margin:0 auto 50px;text-align:center" data-reveal>Techno Amaze works with
+        cutting-edge development languages, automation platforms, analytics, DevOps, and integration technologies to
+        build scalable digital ecosystems.</p>
+      <div class="ta-marquee-row" data-reveal>
+        <div class="ta-marquee-track right" id="ta-row1"></div>
+      </div>
+      <div class="ta-marquee-row" data-reveal>
+        <div class="ta-marquee-track left" id="ta-row2"></div>
+      </div>
+      <div class="ta-marquee-row" data-reveal>
+        <div class="ta-marquee-track right" id="ta-row3"></div>
+      </div>
+      <div data-reveal style="text-align:center"><a href="<?php echo esc_url(home_url('/contact/')); ?>"
+          class="ta-btn ta-btn-primary ta-tech-cta">Discuss Your Tech Stack &#8594;</a></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="ta-testimonials" class="ta-section-reveal" aria-labelledby="testi-heading">
+    <div class="ta-testi-header" data-reveal style="text-align:center;margin-bottom:30px">
+      <div class="ta-eyebrow ta-eyebrow--center">Client Testimonials</div>
+      <h2 class="ta-section-title" id="testi-heading">What Our Clients Say</h2>
+    </div>
+    <div class="ta-testi-outer">
+      <div class="ta-testi-wrap" id="ta-testi-wrap">
+        <div class="ta-testi-frame"></div>
+        <button type="button" class="ta-testi-arrow ta-testi-arrow-l" id="ta-testi-prev"
+          aria-label="Previous testimonial">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div class="ta-testi-stack">
+          <div class="ta-testi-card">
+            <div class="ta-testi-icon"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 7c-3 1.5-4 4-4 7 0 2.2 1.3 3.5 3 3.5S11 16.2 11 14c0-1.5-.9-2.7-2.3-3C9 9.7 9.8 8.3 11 7.4L9 7zm8 0c-3 1.5-4 4-4 7 0 2.2 1.3 3.5 3 3.5s3-1.3 3-3.5c0-1.5-.9-2.7-2.3-3 .3-1.3 1.1-2.7 2.3-3.6L17 7z"
+                  fill="white" />
+              </svg></div>
+            <div class="ta-testi-stars">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2l3.1 6.6 7.2.9-5.3 5 1.4 7.2L12 18l-6.4 3.7 1.4-7.2-5.3-5 7.2-.9L12 2z" />
+              </svg>
+            </div>
+            <div class="ta-testi-text-wrap">
+              <p class="ta-testi-text" id="ta-testi-text">Techno Amaze transformed our entire digital infrastructure in
+                record time. The team expertise in cloud migration and cybersecurity gave us complete confidence. We
+                could not have asked for a better technology partner.</p>
+            </div>
+            <div class="ta-testi-author" id="ta-testi-author">
+              <strong id="ta-testi-name">Theresa Webb</strong>
+              <span id="ta-testi-role">CEO, CloudVentures Inc.</span>
+            </div>
+            <div class="ta-testi-avatars" id="ta-testi-avatars">
+              <button type="button" class="ta-testi-avatar" data-index="0" aria-label="Testimonial 1"><img
+                  src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter"></button>
+              <button type="button" class="ta-testi-avatar active" data-index="1" aria-label="Testimonial 2"><img
+                  src="https://randomuser.me/api/portraits/women/44.jpg" alt="Theresa Webb"></button>
+              <button type="button" class="ta-testi-avatar" data-index="2" aria-label="Testimonial 3"><img
+                  src="https://randomuser.me/api/portraits/men/65.jpg" alt="Marcus Reed"></button>
+            </div>
+          </div>
+          <div class="ta-testi-ribbon">
+            <div class="ta-testi-flag"></div>
+          </div>
+        </div>
+        <button type="button" class="ta-testi-arrow ta-testi-arrow-r" id="ta-testi-next" aria-label="Next testimonial">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="ta-faq" class="ta-section-reveal" aria-labelledby="faq-heading">
+    <div class="ta-faq-inner">
+      <div class="ta-faq-left" data-reveal="left">
+        <div class="ta-eyebrow">FAQS</div>
+        <h2 class="ta-section-title" id="faq-heading">Have Questions in Your Mind?<br>Get the Answers Now</h2>
+        <div class="ta-faq-list" id="ta-faq-list">
+          <div class="ta-faq-item" id="faq-1">
+            <button class="ta-faq-q" aria-expanded="true" aria-controls="faq-ans-1">
+              What custom software development services do you offer?
+              <span class="ta-faq-q-icon" aria-hidden="true">&minus;</span>
+            </button>
+            <div class="ta-faq-answer" id="faq-ans-1" role="region">
+              <p class="ta-faq-answer-inner">We build web applications, mobile apps (iOS &amp; Android), cloud
+                infrastructure, cybersecurity architectures, AI solutions, and SaaS products tailored to your exact
+                business requirements.</p>
+            </div>
+          </div>
+          <div class="ta-faq-item" id="faq-2">
+            <button class="ta-faq-q" aria-expanded="false" aria-controls="faq-ans-2">
+              How do you approach UI/UX design for new products?
+              <span class="ta-faq-q-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="ta-faq-answer" id="faq-ans-2" role="region">
+              <p class="ta-faq-answer-inner">We follow a human-centered design approach starting with discovery
+                research, user personas, wireframing, high-fidelity Figma prototypes, and usability testing before
+                development begins.</p>
+            </div>
+          </div>
+          <div class="ta-faq-item" id="faq-3">
+            <button class="ta-faq-q" aria-expanded="false" aria-controls="faq-ans-3">
+              Can Techno Amaze assist with digital marketing &amp; lead gen?
+              <span class="ta-faq-q-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="ta-faq-answer" id="faq-ans-3" role="region">
+              <p class="ta-faq-answer-inner">Yes! Our digital marketing strategists manage search engine optimization
+                (SEO), Google &amp; LinkedIn PPC campaigns, social media marketing, and conversion rate optimization
+                (CRO).</p>
+            </div>
+          </div>
+          <div class="ta-faq-item" id="faq-4">
+            <button class="ta-faq-q" aria-expanded="false" aria-controls="faq-ans-4">
+              How quickly can we start our project consultation?
+              <span class="ta-faq-q-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="ta-faq-answer" id="faq-ans-4" role="region">
+              <p class="ta-faq-answer-inner">Contact us today to schedule a free 30-minute discovery call. Our solution
+                architects analyze your requirements and present a tailored proposal within 48 hours.</p>
+            </div>
+          </div>
+          <div class="ta-faq-item" id="faq-5">
+            <button class="ta-faq-q" aria-expanded="false" aria-controls="faq-ans-5">
+              Do you offer post-launch maintenance and support?
+              <span class="ta-faq-q-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="ta-faq-answer" id="faq-ans-5" role="region">
+              <p class="ta-faq-answer-inner">Absolutely. We offer flexible support packages including 24/7 monitoring,
+                security patching, feature updates, and performance tuning so your product stays ahead.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ta-faq-right" data-reveal="right">
+        <div class="ta-faq-stat">
+          <span class="ta-faq-stat-num">500k+</span>
+          <span class="ta-faq-stat-label">Satisfied User</span>
+        </div>
+        <div class="ta-faq-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&h=680&fit=crop&q=80"
+            alt="Team collaborating on solutions" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="ta-blog" class="ta-section-reveal" aria-labelledby="blog-heading">
+    <div class="ta-blog-inner">
+      <div class="ta-blog-header" data-reveal>
+        <div class="ta-eyebrow" style="justify-content:center">Latest News</div>
+        <h2 class="ta-section-title" id="blog-heading">Read Our Latest Articles &amp; News</h2>
+      </div>
+      <div class="ta-blog-grid" data-reveal-group>
+        <?php
+        $home_blogs = new WP_Query(array(
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'posts_per_page' => 3
+        ));
+        if ($home_blogs->have_posts()) :
+            while ($home_blogs->have_posts()) : $home_blogs->the_post();
+                $b_thumb = function_exists('technoamaze_get_blog_thumbnail') 
+                    ? technoamaze_get_blog_thumbnail(get_the_ID(), 'medium_large') 
+                    : (has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'medium_large') : 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=500&fit=crop&q=80');
+        ?>
+          <article class="ta-blog-card">
+            <div class="ta-blog-card-img">
+              <a href="<?php the_permalink(); ?>">
+                <img src="<?php echo esc_url($b_thumb); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy">
+              </a>
+              <div class="ta-blog-date">
+                <strong><?php echo get_the_date('d'); ?></strong>
+                <span><?php echo get_the_date('M Y'); ?></span>
+              </div>
+            </div>
+            <div class="ta-blog-card-body">
+              <div class="ta-blog-meta">
+                <span><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" /></svg> <?php the_author(); ?></span>
+                <span><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" /></svg> <?php echo get_comments_number(); ?> Comments</span>
+              </div>
+              <h3 class="ta-blog-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <a href="<?php the_permalink(); ?>" class="ta-blog-readmore">Read More<span class="ta-blog-rm-line"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+            </div>
+          </article>
+        <?php
+            endwhile;
+            wp_reset_postdata();
+        endif;
+        ?>
+      </div>
+      <div style="text-align:center;margin:32px 0 20px;">
+        <a href="<?php echo esc_url(home_url('/blogs/')); ?>" class="ta-btn-cta" style="display:inline-block;padding:12px 28px;">View All Insights &rarr;</a>
+      </div>
+      <div class="ta-partners">
+        <div class="ta-partners-track" data-reveal-group>
+          <span class="ta-partner-logo">Microsoft</span><span class="ta-partner-logo">AWS</span>
+          <span class="ta-partner-logo">Google Cloud</span><span class="ta-partner-logo">Salesforce</span>
+          <span class="ta-partner-logo">SAP</span><span class="ta-partner-logo">Oracle</span><span
+            class="ta-partner-logo">IBM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="ta-contact" class="ta-section-reveal" aria-labelledby="contact-heading">
+    <h2 id="contact-heading" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Contact
+      Techno Amaze</h2>
+    <div class="ta-contact-img" data-reveal="left">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+        alt="Team collaborating">
+    </div>
+    <div class="ta-contact-strip">
+      <div class="ta-contact-strip-inner">
+        <h3 class="ta-contact-strip-heading">Feel Free to Write Us</h3>
+        <span class="ta-contact-strip-text">Contact With Us</span>
+      </div>
+    </div>
+    <div class="ta-contact-right" data-reveal="right">
+      <div class="ta-contact-card">
+        <form id="ta-home-contact-form" novalidate>
+          <input type="hidden" name="source" value="Home Page">
+          <input type="text" name="_honey" class="ta-form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input class="ta-contact-field" type="text" name="name" placeholder="Your Name" aria-label="Your Name"
+            autocomplete="name" required>
+          <input class="ta-contact-field" type="email" name="email" placeholder="Email Address"
+            aria-label="Email Address" autocomplete="email" required>
+          <input class="ta-contact-field" type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number"
+            autocomplete="tel" required>
+          <input class="ta-contact-field" type="text" name="subject" placeholder="Subject" aria-label="Subject"
+            required>
+          <textarea class="ta-contact-field ta-contact-textarea" name="message" placeholder="Write a Message"
+            aria-label="Message" required></textarea>
+          <button type="submit" class="ta-contact-submit" id="ta-home-submit-btn">Send a Message &#8594;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<?php
+get_footer();

@@ -1,0 +1,25 @@
+{
+  "name": "technoamaze-sdlc-website",
+  "version": "1.0.0",
+  "description": "TechnoAmaze Corporate IT Website & Careers Platform - WordPress Environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "restart": "wp-env start --update",
+    "cli": "wp-env run cli",
+    "clean": "wp-env clean all",
+    "destroy": "wp-env destroy"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "wp-env",
+    "technoamaze"
+  ],
+  "author": "TechnoAmaze",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/env": "11.16.0"
+  }
+}

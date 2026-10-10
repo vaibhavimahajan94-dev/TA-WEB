@@ -1,0 +1,17 @@
+{
+  "core": "https://wordpress.org/latest.zip",
+  "phpVersion": "8.3",
+  "port": 8888,
+  "testsEnvironment": false,
+  "themes": [
+    "./themes/technoamaze-theme"
+  ],
+  "plugins": [
+    "./plugins/technoamaze-core"
+  ],
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "WP_DEBUG_DISPLAY": false
+  }
+}

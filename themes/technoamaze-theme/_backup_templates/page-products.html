@@ -1,0 +1,164 @@
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:html -->
+<div class="ta-search-panel" id="ta-search-panel">
+      <div class="ta-search-panel-inner">
+        <form class="ta-search-form" role="search" onsubmit="return false;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input type="text" id="ta-search-input" placeholder="Search products, services, pages...">
+          <button type="submit" class="ta-search-submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="ta-products-hero" style="position:relative;background:var(--ta-dark);padding:clamp(70px,10vh,110px) clamp(16px,4vw,32px) clamp(50px,7vh,80px);overflow:hidden;color:#ffffff;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 70% 30%, rgba(200,0,110,0.2) 0%, transparent 70%);pointer-events:none;"></div>
+    <div class="ta-container" style="position:relative;z-index:2;text-align:center;max-width:860px;margin:0 auto;">
+      <div class="ta-eyebrow" style="justify-content:center;color:#ff8acd;margin-bottom:14px;">Enterprise Software Products</div>
+      <h1 class="ta-section-title ta-section-title--white" style="font-size:clamp(28px,4.5vw,54px);line-height:1.16;margin-bottom:18px;">
+        Proprietary SaaS &amp; Industry <span class="ta-highlight-text">Platforms</span>
+      </h1>
+      <p class="ta-section-desc ta-section-desc--center" style="color:rgba(255,255,255,0.7);font-size:clamp(14px,1.1vw,17px);line-height:1.75;margin-bottom:28px;max-width:700px;margin-left:auto;margin-right:auto;">
+        Battle-tested, ready-to-deploy enterprise software products built to scale operations, ensure regulatory compliance, and deliver rapid ROI across industries.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="#products-list" class="ta-btn ta-btn-primary" style="padding:13px 26px;">Explore Products <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="/contact/" class="ta-btn" style="border:1.5px solid rgba(255,255,255,0.3);color:#ffffff;padding:13px 26px;background:rgba(255,255,255,0.06);backdrop-filter:blur(6px);">Request Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID LIST -->
+  <section id="products-list" class="ta-section-reveal" style="padding:clamp(60px,8vw,100px) clamp(16px,3vw,48px);background:var(--ta-surface);">
+    <div class="ta-container">
+      
+      <!-- Product 1: Seato Pro -->
+      <div id="seatopro" class="ta-card ta-product-card" data-reveal>
+        <div class="ta-product-content">
+          <span style="display:inline-block;padding:6px 14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);font-family:var(--ta-font-head);font-size:12px;font-weight:700;border-radius:20px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">Library &amp; Study Hall SaaS</span>
+          <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--ta-ink);margin-bottom:14px;">Seato Pro — Smart Library &amp; Reading Room SaaS</h2>
+          <p style="color:var(--ta-muted);line-height:1.75;margin-bottom:22px;">
+            All-in-one cloud platform designed for modern libraries and self-study reading rooms. Eliminate paper registers, seat disputes, and fee delays with real-time seat matrix allocation, student QR attendance, automated fee receipts, and WhatsApp reminders.
+          </p>
+          <ul class="ta-product-feature-list">
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Real-Time Seat Matrix Grid</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>QR &amp; Biometric Attendance</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Automated Fee Receipts &amp; UPI</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>WhatsApp &amp; SMS Due Reminders</li>
+          </ul>
+          <div class="ta-product-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.technoamaze.seato_pro&hl=en_IN" target="_blank" rel="noopener" class="ta-btn ta-btn-primary"><i class="fa-brands fa-google-play"></i> Download Android App</a>
+            <a href="/products/seatopro/" class="ta-btn ta-btn-dark"><i class="fa-solid fa-circle-info"></i> Product Details Page</a>
+          </div>
+        </div>
+        <div class="ta-product-visual">
+          <img src="images/seatopro_dashboard.png" alt="Seato Pro Library SaaS Platform Dashboard" class="ta-product-card-img">
+        </div>
+      </div>
+
+      <!-- Product 2: Techno Amaze Academy -->
+      <div id="academy" class="ta-card ta-product-card" data-reveal>
+        <div class="ta-product-content">
+          <span style="display:inline-block;padding:6px 14px;background:rgba(200,0,110,0.14);color:var(--ta-accent);font-family:var(--ta-font-head);font-size:12px;font-weight:700;border-radius:20px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">Flagship EdTech App</span>
+          <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--ta-ink);margin-bottom:14px;">Techno Amaze Academy — Smart EdTech &amp; LMS App</h2>
+          <p style="color:var(--ta-muted);line-height:1.75;margin-bottom:22px;">
+            The complete mobile Learning Management System (LMS) app for coaching centers, schools, and competitive exam institutes. Conduct interactive HD live classes, online test series with AI scorecards, study notes distribution, and automated WhatsApp parent score reports.
+          </p>
+          <ul class="ta-product-feature-list">
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>HD Live Streaming &amp; Class Chat</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Online Test Series &amp; AI Analytics</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>WhatsApp Parent Progress Alerts</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>DRM Encrypted Study PDFs</li>
+          </ul>
+          <div class="ta-product-btn-row">
+            <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank" rel="noopener" class="ta-btn ta-btn-primary"><i class="fa-brands fa-google-play"></i> Download Play App</a>
+            <a href="/products/academy/" class="ta-btn ta-btn-dark"><i class="fa-solid fa-circle-info"></i> Academy Landing Page</a>
+          </div>
+        </div>
+        <div class="ta-product-visual">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80&auto=format&fit=crop" alt="Techno Amaze Academy EdTech App" class="ta-product-card-img">
+        </div>
+      </div>
+
+      <!-- Product 3: MedPulse EHR -->
+      <div id="medpulse" class="ta-card ta-product-card" data-reveal>
+        <div class="ta-product-content">
+          <span style="display:inline-block;padding:6px 14px;background:rgba(6,214,160,0.14);color:#06d6a0;font-family:var(--ta-font-head);font-size:12px;font-weight:700;border-radius:20px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">Healthcare SaaS</span>
+          <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--ta-ink);margin-bottom:14px;">MedPulse — Smart EHR &amp; Telehealth</h2>
+          <p style="color:var(--ta-muted);line-height:1.75;margin-bottom:22px;">
+            HIPAA and HL7/FHIR compliant electronic health record system equipped with AI diagnostic copilot, patient portal app, e-prescriptions, and integrated HD telemedicine consultations.
+          </p>
+          <ul class="ta-product-feature-list">
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>HIPAA &amp; HL7 Compliant</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>AI Diagnostic Support</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Integrated Telehealth</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Patient Mobile App</li>
+          </ul>
+          <a href="contact.html?product=medpulse" class="ta-btn ta-btn-primary" style="display:inline-flex;padding:13px 24px;">Request MedPulse Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="ta-product-visual">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&auto=format&fit=crop" alt="MedPulse EHR" class="ta-product-card-img">
+        </div>
+      </div>
+
+      <!-- Product 4: FinEngine -->
+      <div id="finengine" class="ta-card ta-product-card" data-reveal>
+        <div class="ta-product-content">
+          <span style="display:inline-block;padding:6px 14px;background:rgba(0,180,216,0.14);color:#00b4d8;font-family:var(--ta-font-head);font-size:12px;font-weight:700;border-radius:20px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">FinTech Engine</span>
+          <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--ta-ink);margin-bottom:14px;">FinEngine — Neobanking Core</h2>
+          <p style="color:var(--ta-muted);line-height:1.75;margin-bottom:22px;">
+            High-throughput digital banking and payment processing core. Handles multi-currency digital wallets, automated loan underwriting, real-time ML fraud detection, and open banking API compliance.
+          </p>
+          <ul class="ta-product-feature-list">
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>PCI-DSS Certified</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Multi-currency Ledger</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>ML Fraud Scoring</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Automated KYC / AML</li>
+          </ul>
+          <a href="contact.html?product=finengine" class="ta-btn ta-btn-primary" style="display:inline-flex;padding:13px 24px;">Request FinEngine Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="ta-product-visual">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&auto=format&fit=crop" alt="FinEngine Core" class="ta-product-card-img">
+        </div>
+      </div>
+
+      <!-- Product 5: EduSphere LMS -->
+      <div id="edusphere" class="ta-card ta-product-card" data-reveal>
+        <div class="ta-product-content">
+          <span style="display:inline-block;padding:6px 14px;background:rgba(123,45,139,0.14);color:#7b2d8b;font-family:var(--ta-font-head);font-size:12px;font-weight:700;border-radius:20px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">EdTech SaaS</span>
+          <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--ta-ink);margin-bottom:14px;">EduSphere — AI-Powered LMS</h2>
+          <p style="color:var(--ta-muted);line-height:1.75;margin-bottom:22px;">
+            Next-gen learning management platform with AI personalized learning paths, interactive virtual classrooms, automated grading, SCORM compliance, and AI proctored online examinations.
+          </p>
+          <ul class="ta-product-feature-list">
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>SCORM / xAPI Ready</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>AI Proctoring Engine</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Live Virtual Classes</li>
+            <li><i class="fa-solid fa-check" style="color:var(--ta-accent);margin-right:8px;"></i>Gamified Mobile Apps</li>
+          </ul>
+          <a href="contact.html?product=edusphere" class="ta-btn ta-btn-primary" style="display:inline-flex;padding:13px 24px;">Request EduSphere Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="ta-product-visual">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80&auto=format&fit=crop" alt="EduSphere LMS" class="ta-product-card-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="background:var(--ta-dark);padding:clamp(60px,8vw,90px) clamp(16px,3vw,48px);color:#ffffff;text-align:center;">
+    <div class="ta-container" style="max-width:760px;">
+      <h2 style="font-family:var(--ta-font-head);font-size:clamp(28px,3.5vw,44px);font-weight:800;margin-bottom:16px;">Need a Custom Product Built?</h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:16px;line-height:1.8;margin-bottom:32px;">
+        Beyond our turnkey SaaS platforms, our engineering team builds custom enterprise products tailored to your exact specifications.
+      </p>
+      <a href="/contact/" class="ta-btn ta-btn-primary">Talk to Product Engineering <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+<!-- /wp:html -->
+<!-- wp:template-part {"slug":"footer"} /-->

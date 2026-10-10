@@ -1,0 +1,196 @@
+<?php
+/**
+ * Template Name: Apply Now
+ * Description: Custom template for Apply Now page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+
+  <!-- BREADCRUMB / HERO BANNER -->
+  <section class="ta-careers-hero" style="padding: clamp(36px, 5vw, 56px) 0;">
+    <div class="ta-careers-hero-inner">
+      <nav class="ta-breadcrumb" aria-label="Breadcrumb">
+        <a href="<?php echo esc_url(home_url('/')); ?>">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:10px;opacity:0.6;"></i>
+        <a href="<?php echo esc_url(home_url('/careers/')); ?>">Careers</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:10px;opacity:0.6;"></i>
+        <span style="color:var(--ta-accent);font-weight:600;">Job Application</span>
+      </nav>
+      <h2 style="font-family:var(--ta-font-head);font-size:clamp(22px, 3vw, 30px);font-weight:800;color:var(--ta-ink);margin-top:12px;">
+        Submit Your Candidacy
+      </h2>
+      <p style="font-size:14.5px;color:var(--ta-muted);max-width:620px;margin-top:6px;">
+        Please complete the application form below. Our recruiting team will carefully review your credentials.
+      </p>
+    </div>
+  </section>
+
+  <!-- APPLY MAIN SECTION -->
+  <main class="ta-apply-page">
+    <div class="ta-apply-inner">
+
+      <div class="ta-apply-card">
+
+        <!-- HEADER TITLE & ASSOCIATED JOB PILL -->
+        <div class="ta-apply-header">
+          <div style="margin-bottom:12px;">
+            <div id="ta-apply-job-meta" class="ta-apply-job-pill">
+              <i class="fa-solid fa-briefcase"></i> Detecting Position...
+            </div>
+          </div>
+          <h1 id="ta-apply-job-title" class="ta-apply-title">Apply for Position</h1>
+          <p style="font-size:14px;color:var(--ta-muted);max-width:540px;margin:0 auto;">
+            Fill in your authentic contact details, work history, and upload your latest resume.
+          </p>
+        </div>
+
+        <!-- NOTIFICATION / ERROR ALERT CONTAINER -->
+        <div id="ta-apply-alert" style="display:none;margin-bottom:24px;"></div>
+
+        <!-- APPLICATION FORM -->
+        <form id="ta-apply-form" method="POST" enctype="multipart/form-data" novalidate>
+          <!-- Hidden Job Association Fields -->
+          <input type="hidden" id="ta-input-job-id" name="job_id" value="">
+          <input type="hidden" id="ta-input-job-title" name="job_title" value="">
+
+          <!-- ROW 1: Name & Email -->
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-name">
+                Full Name <span style="color:var(--ta-accent);" aria-hidden="true">*</span>
+              </label>
+              <input class="ta-contact-field" type="text" id="apply-name" name="name"
+                placeholder="e.g. John Doe" autocomplete="name" required aria-required="true">
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-email">
+                Email Address <span style="color:var(--ta-accent);" aria-hidden="true">*</span>
+              </label>
+              <input class="ta-contact-field" type="email" id="apply-email" name="email"
+                placeholder="e.g. john@example.com" autocomplete="email" required aria-required="true">
+            </div>
+          </div>
+
+          <!-- ROW 2: Phone & Current Location -->
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-phone">
+                Phone Number <span style="color:var(--ta-accent);" aria-hidden="true">*</span>
+              </label>
+              <input class="ta-contact-field" type="tel" id="apply-phone" name="phone"
+                placeholder="e.g. +91 98765 43210" autocomplete="tel" required aria-required="true">
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-location">
+                Current Location
+              </label>
+              <input class="ta-contact-field" type="text" id="apply-location" name="location"
+                placeholder="e.g. Pune, Maharashtra / Remote">
+            </div>
+          </div>
+
+          <!-- ROW 3: Experience & LinkedIn -->
+          <div class="ta-form-grid-2">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-experience">
+                Total Experience <span style="color:var(--ta-accent);" aria-hidden="true">*</span>
+              </label>
+              <input class="ta-contact-field" type="text" id="apply-experience" name="experience"
+                placeholder="e.g. 2 Years / Fresher / 4.5 Years" required aria-required="true">
+            </div>
+
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="apply-linkedin">
+                LinkedIn Profile URL
+              </label>
+              <input class="ta-contact-field" type="url" id="apply-linkedin" name="linkedin"
+                placeholder="https://linkedin.com/in/username">
+            </div>
+          </div>
+
+          <!-- ROW 4: Portfolio / GitHub URL -->
+          <div class="ta-form-group">
+            <label class="ta-form-label" for="apply-portfolio">
+              Portfolio / GitHub / Website URL
+            </label>
+            <input class="ta-contact-field" type="url" id="apply-portfolio" name="portfolio"
+              placeholder="https://github.com/username or https://myportfolio.com">
+          </div>
+
+          <!-- RESUME UPLOAD SECTION -->
+          <div class="ta-form-group" style="margin-top:8px;">
+            <label class="ta-form-label">
+              Upload Resume / CV <span style="color:var(--ta-accent);" aria-hidden="true">*</span>
+              <span style="font-weight:400;color:var(--ta-muted);font-size:12px;margin-left:6px;">(PDF, DOC, DOCX — Max 5MB)</span>
+            </label>
+            <div id="ta-resume-zone" class="ta-file-upload-zone">
+              <input type="file" id="ta-resume-file" name="resume" accept=".pdf,.doc,.docx" required aria-required="true">
+              <div class="ta-upload-icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <div class="ta-upload-text">
+                Drag and drop your resume here, or <span style="color:var(--ta-accent);text-decoration:underline;">Browse</span>
+              </div>
+              <div class="ta-upload-hint">Supported formats: PDF, DOC, DOCX up to 5 MB</div>
+              <div class="ta-file-selected-info" style="display:none;">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span id="ta-file-selected-name"></span>
+                <button type="button" id="ta-file-clear-btn" style="background:none;border:none;color:var(--ta-muted);cursor:pointer;padding:2px 6px;margin-left:6px;" title="Remove file" aria-label="Remove selected file">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- COVER LETTER / MESSAGE -->
+          <div class="ta-form-group" style="margin-top:16px;">
+            <label class="ta-form-label" for="apply-cover-letter">
+              Cover Letter / Additional Note
+            </label>
+            <textarea class="ta-contact-field ta-contact-textarea" id="apply-cover-letter" name="cover_letter" rows="4"
+              placeholder="Briefly introduce yourself, relevant projects, why you are interested in this position, and notice period if applicable..."></textarea>
+          </div>
+
+          <!-- CONSENT CHECKBOX -->
+          <div class="ta-form-group" style="margin:20px 0 28px;">
+            <label class="ta-form-checkbox-label" for="ta-apply-consent">
+              <input type="checkbox" name="consent" id="ta-apply-consent" required aria-required="true">
+              <span>
+                I agree that Techno Amaze may process my submitted resume and application data for recruitment, screening, and hiring purposes in accordance with company data policies. <strong style="color:var(--ta-accent);">*</strong>
+              </span>
+            </label>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <button type="submit" id="ta-submit-app-btn" class="ta-btn-submit-app">
+            Submit Application <i class="fa-solid fa-paper-plane" style="font-size:13px;margin-left:6px;"></i>
+          </button>
+        </form>
+
+        <!-- SECURITY & PRIVACY NOTICE -->
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--ta-border);text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12.5px;color:var(--ta-muted);">
+          <i class="fa-solid fa-lock" style="color:var(--ta-accent);"></i>
+          <span>Your information is encrypted, transmitted securely, and strictly treated with confidentiality.</span>
+        </div>
+
+      </div>
+
+      <!-- BACK LINK -->
+      <div style="text-align:center;margin-top:28px;">
+        <a href="<?php echo esc_url(home_url('/careers/')); ?>" style="font-size:14px;color:var(--ta-muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:color 0.2s;">
+          <i class="fa-solid fa-arrow-left"></i> Return to Careers Page
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+<?php
+get_footer();

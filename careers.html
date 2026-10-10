@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers & Open Positions | Techno Amaze</title>
+  <meta name="description"
+    content="Join Techno Amaze — explore exciting careers in software engineering, cloud architecture, AI, web development, and digital marketing. Apply now.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/careers.css">
+  <script>
+    (function () {
+      var theme = localStorage.getItem('ta-theme') || localStorage.getItem('ta_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div id="ta-topbar">
+    <div class="ta-topbar-inner">
+      <div class="ta-topbar-left">
+        <span class="ta-topbar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          Chh. Sambhajinagar, Maharashtra, India
+        </span>
+        <a href="mailto:info@technoamaze.in" class="ta-topbar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 5h18v14H3z" />
+            <path d="M3 6l9 7 9-7" />
+          </svg>
+          info@technoamaze.in
+        </a>
+      </div>
+      <div class="ta-topbar-right">
+        <p class="ta-topbar-hours">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15.5 15.5" />
+          </svg>
+          Mon-Fri 9:00-6:00 | Sat 10:00-4:00
+        </p>
+        <div class="ta-topbar-social">
+          <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="ta-header">
+    <div class="ta-nav-inner" id="ta-nav-inner">
+      <a href="index.html" class="ta-logo" aria-label="Techno Amaze home">
+        <img
+          src="https://technoamaze.technoamaze.in/wp-content/uploads/2026/07/cropped-01-1-300x214-removebg-preview-1.png"
+          alt="Techno Amaze Logo"
+          onerror="this.onerror=null;this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<span style=&quot;font-family:Poppins,sans-serif;font-weight:900;font-size:22px;color:#C8006E&quot;>Techno<span style=&quot;color:#151726&quot;>Amaze</span></span>')">
+      </a>
+      <nav aria-label="Primary navigation">
+        <button class="ta-nav-close" id="ta-nav-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <div class="ta-nav-menu-wrap">
+          <ul class="ta-nav-menu" id="ta-primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="ta-has-dropdown">
+              <a href="services.html">Services <i class="fa-solid fa-chevron-down ta-dropdown-arrow"></i></a>
+              <ul class="ta-dropdown-menu ta-dropdown-grid">
+                <li><a href="services/custom-software-development.html"><i class="fa-solid fa-code"></i> Custom Software Development</a></li>
+                <li><a href="services/website-development.html"><i class="fa-solid fa-globe"></i> Website Development</a></li>
+                <li><a href="services/mobile-app-development.html"><i class="fa-solid fa-mobile-screen"></i> Mobile App Development</a></li>
+                <li><a href="services/ecommerce-development.html"><i class="fa-solid fa-cart-shopping"></i> E-commerce Development</a></li>
+                <li><a href="services/saas-product-development.html"><i class="fa-solid fa-cloud-arrow-up"></i> SaaS Product Development</a></li>
+                <li><a href="services/erp-crm-development.html"><i class="fa-solid fa-sitemap"></i> ERP &amp; CRM Development</a></li>
+                <li><a href="services/ui-ux-design.html"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</a></li>
+                <li><a href="services/api-development-integration.html"><i class="fa-solid fa-plug"></i> API Development &amp; Integration</a></li>
+                <li><a href="services/software-testing-qa.html"><i class="fa-solid fa-bug-slash"></i> Software Testing &amp; QA</a></li>
+                <li><a href="services/cloud-services.html"><i class="fa-solid fa-cloud"></i> Cloud Services</a></li>
+                <li><a href="services/devops-services.html"><i class="fa-solid fa-gears"></i> DevOps Services</a></li>
+                <li><a href="services/cybersecurity-services.html"><i class="fa-solid fa-shield-halved"></i> Cybersecurity Services</a></li>
+                <li><a href="services/data-analytics.html"><i class="fa-solid fa-chart-bar"></i> Data Analytics &amp; BI</a></li>
+                <li><a href="services/ai-machine-learning.html"><i class="fa-solid fa-brain"></i> AI &amp; Machine Learning</a></li>
+                <li><a href="services/software-maintenance-support.html"><i class="fa-solid fa-screwdriver-wrench"></i> Software Maintenance</a></li>
+                <li><a href="services/it-consulting.html"><i class="fa-solid fa-lightbulb"></i> IT Consulting</a></li>
+                <li><a href="services/digital-marketing.html"><i class="fa-solid fa-chart-line"></i> Digital Marketing</a></li>
+                <li><a href="services/search-engine-optimization.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Search Engine Optimization</a></li>
+                <li><a href="services/social-media-marketing.html"><i class="fa-brands fa-instagram"></i> Social Media Marketing</a></li>
+                <li><a href="services/google-meta-ads.html"><i class="fa-brands fa-google"></i> Google &amp; Meta Ads</a></li>
+                <li><a href="services/content-marketing.html"><i class="fa-solid fa-file-lines"></i> Content Marketing</a></li>
+                <li><a href="services/email-marketing.html"><i class="fa-solid fa-envelope-open-text"></i> Email Marketing</a></li>
+                <li><a href="services/lead-generation.html"><i class="fa-solid fa-user-plus"></i> Lead Generation</a></li>
+                <li><a href="services/online-reputation-management.html"><i class="fa-solid fa-star-half-stroke"></i> Online Reputation Mgmt</a></li>
+                <li><a href="services/graphic-design-branding.html"><i class="fa-solid fa-palette"></i> Graphic Design &amp; Branding</a></li>
+                <li class="ta-dropdown-full"><a href="services.html" style="font-weight:700;color:var(--ta-accent);border-top:1px solid var(--ta-border);margin-top:4px;padding-top:10px;"><i class="fa-solid fa-arrow-right"></i> View All 25 Services Overview</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+            </li>
+            <li class="ta-has-dropdown">
+              <a href="industries.html">Industries <i class="fa-solid fa-chevron-down ta-dropdown-arrow"></i></a>
+              <ul class="ta-dropdown-menu">
+                <li><a href="industries/healthcare.html"><i class="fa-solid fa-stethoscope"></i> Healthcare &amp; MedTech</a></li>
+                <li><a href="industries/fintech.html"><i class="fa-solid fa-landmark"></i> FinTech &amp; Banking</a></li>
+                <li><a href="industries/ecommerce.html"><i class="fa-solid fa-cart-shopping"></i> E-Commerce &amp; Retail</a></li>
+                <li><a href="industries/edtech.html"><i class="fa-solid fa-graduation-cap"></i> Education &amp; EdTech</a></li>
+                <li><a href="industries/manufacturing.html"><i class="fa-solid fa-industry"></i> Manufacturing &amp; IoT</a></li>
+                <li><a href="industries/realestate.html"><i class="fa-solid fa-building"></i> Real Estate &amp; PropTech</a></li>
+                <li><a href="industries/gaming.html"><i class="fa-solid fa-gamepad"></i> Gaming &amp; Entertainment</a></li>
+                <li><a href="industries/logistics.html"><i class="fa-solid fa-truck-fast"></i> Logistics &amp; Supply Chain</a></li>
+                <li><a href="industries/travel.html"><i class="fa-solid fa-plane"></i> Travel &amp; Hospitality</a></li>
+                <li><a href="industries/legal.html"><i class="fa-solid fa-scale-balanced"></i> Legal &amp; Compliance</a></li>
+              </ul>
+            </li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="careers.html" aria-current="page" style="color:var(--ta-accent);font-weight:700;">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="ta-nav-actions">
+        <a href="contact.html" class="ta-btn-cta">Get Solution</a>
+        <button class="ta-search-toggle" id="ta-search-toggle" aria-label="Search" aria-expanded="false"
+          aria-controls="ta-search-panel">
+          <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+            height="20">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+            height="20">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <span class="ta-nav-divider" aria-hidden="true"></span>
+      </div>
+      <button class="ta-menu-toggle" id="ta-menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="ta-call-block">
+        <span class="ta-call-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path
+              d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+          </svg>
+        </span>
+        <span class="ta-call-text">
+          <p>Call Anytime</p>
+          <a href="tel:+917020995651">+91 70209 95651</a>
+        </span>
+      </div>
+    </div>
+    <div class="ta-nav-overlay" id="ta-nav-overlay"></div>
+    <div class="ta-search-panel" id="ta-search-panel">
+      <div class="ta-search-panel-inner">
+        <form class="ta-search-form" role="search" onsubmit="return false;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input type="text" id="ta-search-input" placeholder="Search for products, services...">
+          <button type="submit" class="ta-search-submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. CAREERS HERO SECTION -->
+  <section class="ta-careers-hero" aria-labelledby="careers-hero-title">
+    <div class="ta-careers-hero-inner">
+      <nav class="ta-careers-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <span aria-current="page">Careers</span>
+      </nav>
+
+      <h1 class="ta-careers-hero-title" id="careers-hero-title">
+        Build The Future Of Tech With <span>Techno Amaze</span>
+      </h1>
+      <p class="ta-careers-hero-desc">
+        We are a passionate team of engineers, designers, cloud architects, and strategists crafting software that powers forward-thinking enterprises worldwide. Discover your next career breakthrough.
+      </p>
+
+      <div class="ta-careers-hero-badges">
+        <div class="ta-hero-pill"><i class="fa-solid fa-laptop-code"></i> Remote &amp; Hybrid Culture</div>
+        <div class="ta-hero-pill"><i class="fa-solid fa-rocket"></i> High-Impact Global Projects</div>
+        <div class="ta-hero-pill"><i class="fa-solid fa-heart-pulse"></i> Comprehensive Health Benefits</div>
+        <div class="ta-hero-pill"><i class="fa-solid fa-graduation-cap"></i> Continuous Learning Budget</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WHY JOIN US SECTION -->
+  <section class="ta-why-join" aria-labelledby="why-join-heading">
+    <div class="ta-why-join-inner">
+      <div class="ta-section-header-center">
+        <span class="ta-eyebrow">Life At Techno Amaze</span>
+        <h2 class="ta-section-title" id="why-join-heading">Why You'll Love Working Here</h2>
+        <p class="ta-section-desc">
+          We believe high-caliber software is engineered by empowered people. Here are the core pillars of our workplace philosophy.
+        </p>
+      </div>
+
+      <div class="ta-why-join-grid">
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3 class="ta-why-join-title">High-Impact Innovation</h3>
+          <p class="ta-why-join-desc">
+            Work with modern technologies including AI agents, multi-cloud platforms, and enterprise microservices that solve mission-critical problems.
+          </p>
+        </div>
+
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="ta-why-join-title">Accelerated Growth Track</h3>
+          <p class="ta-why-join-desc">
+            Clear career pathways, biannual performance reviews, mentorship from senior architects, and paid certification vouchers (AWS, ISTQB, Google).
+          </p>
+        </div>
+
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-house-laptop"></i></div>
+          <h3 class="ta-why-join-title">Flexibility &amp; Autonomy</h3>
+          <p class="ta-why-join-desc">
+            We value outcomes over clocked hours. Enjoy remote-first flexibility, adaptable schedules, and a culture built on mutual trust.
+          </p>
+        </div>
+
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-wallet"></i></div>
+          <h3 class="ta-why-join-title">Competitive Compensation</h3>
+          <p class="ta-why-join-desc">
+            Industry-leading pay scales, transparent annual increments, milestone bonuses, and comprehensive health insurance for you and your family.
+          </p>
+        </div>
+
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3 class="ta-why-join-title">Inclusive, Open Culture</h3>
+          <p class="ta-why-join-desc">
+            Flat hierarchy with open door access to leadership. Your opinions, architecture ideas, and creative suggestions are always welcomed.
+          </p>
+        </div>
+
+        <div class="ta-why-join-card">
+          <div class="ta-why-join-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3 class="ta-why-join-title">Modern Perks &amp; Retreats</h3>
+          <p class="ta-why-join-desc">
+            Home office setup support, regular team hackathons, festive gatherings, annual company retreats, and generous wellness leave allowances.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. OPEN POSITIONS SECTION -->
+  <section class="ta-open-positions" id="open-positions" aria-labelledby="open-positions-heading">
+    <div class="ta-open-positions-inner">
+      <div class="ta-section-header-center">
+        <span class="ta-eyebrow">Explore Opportunities</span>
+        <h2 class="ta-section-title" id="open-positions-heading">Current Open Positions</h2>
+        <p class="ta-section-desc">
+          Browse our active job openings across software engineering, AI, cloud infrastructure, design, and growth marketing.
+        </p>
+      </div>
+
+      <!-- Controls: Filters & Search -->
+      <div class="ta-careers-controls">
+        <div class="ta-filter-tabs" id="ta-filter-tabs">
+          <button type="button" class="ta-filter-btn active" data-dept="all">All Roles</button>
+        </div>
+        <div class="ta-job-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="ta-job-search" class="ta-job-search-input" placeholder="Search by title, skill, or location...">
+        </div>
+      </div>
+
+      <div class="ta-jobs-status-info" id="ta-jobs-count-info">
+        Showing active openings...
+      </div>
+
+      <!-- Dynamic Jobs Container -->
+      <div class="ta-jobs-grid" id="ta-jobs-list">
+        <!-- Rendered dynamically from jobs.json via careers.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="ta-jobs-empty" id="ta-jobs-empty-state" style="display:none;">
+        <div class="ta-jobs-empty-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3 class="ta-jobs-empty-title">No Matching Openings Found</h3>
+        <p class="ta-jobs-empty-text">
+          We don't currently have an active job opening matching your selected criteria. However, we're always excited to connect with talented builders!
+        </p>
+        <a href="mailto:info@technoamaze.in?subject=Spontaneous%20Application%20-%20Techno%20Amaze" class="ta-btn ta-btn-primary">
+          <i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i> Send General Application
+        </a>
+      </div>
+
+      <!-- Resume CTA Banner -->
+      <div class="ta-careers-resume-cta">
+        <div class="ta-resume-cta-text">
+          <h4>Don't see a role that fits your exact profile?</h4>
+          <p>We are constantly expanding our engineering and creative benches. Send us your resume and tell us what you'd love to build.</p>
+        </div>
+        <a href="mailto:info@technoamaze.in?subject=General%20Career%20Application%20-%20Techno%20Amaze" class="ta-btn ta-btn-primary">
+          Send Your Resume <i class="fa-solid fa-arrow-right" style="margin-left:8px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. HIRING PROCESS SECTION -->
+  <section class="ta-hiring-process" aria-labelledby="hiring-process-heading">
+    <div class="ta-hiring-process-inner">
+      <div class="ta-section-header-center">
+        <span class="ta-eyebrow">Our Methodology</span>
+        <h2 class="ta-section-title" id="hiring-process-heading">Our Transparent Hiring Process</h2>
+        <p class="ta-section-desc">
+          We respect your time. Here is what you can expect from the moment you submit your application to your first day.
+        </p>
+      </div>
+
+      <div class="ta-process-steps-grid">
+        <div class="ta-process-step-card">
+          <span class="ta-step-badge">1</span>
+          <h3 class="ta-step-title">Application Review</h3>
+          <p class="ta-step-desc">Our technical recruitment team thoroughly reviews your profile, portfolio, and experience within 48-72 business hours.</p>
+        </div>
+
+        <div class="ta-process-step-card">
+          <span class="ta-step-badge">2</span>
+          <h3 class="ta-step-title">Initial Screening</h3>
+          <p class="ta-step-desc">A quick 20-30 minute conversation to discuss your background, expectations, and answer your questions about Techno Amaze.</p>
+        </div>
+
+        <div class="ta-process-step-card">
+          <span class="ta-step-badge">3</span>
+          <h3 class="ta-step-title">Technical Deep Dive</h3>
+          <p class="ta-step-desc">A practical discussion and live coding or architectural session focused on real-world engineering problem solving.</p>
+        </div>
+
+        <div class="ta-process-step-card">
+          <span class="ta-step-badge">4</span>
+          <h3 class="ta-step-title">Offer &amp; Onboarding</h3>
+          <p class="ta-step-desc">Competitive offer rollout, transparent contract terms discussion, and seamless guided onboarding with your new squad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="ta-footer" aria-label="Site footer">
+    <div class="ta-footer-grid">
+      <div class="ta-footer-brand">
+        <div class="ta-logo" style="padding:0;margin:0 0 18px">
+          <img
+            src="https://technoamaze.technoamaze.in/wp-content/uploads/2026/07/cropped-01-1-300x214-removebg-preview-1.png"
+            alt="Techno Amaze" style="height:50px;width:auto;filter:brightness(0) invert(1)"
+            onerror="this.style.display='none'">
+        </div>
+        <p>We design, develop and deliver secure, scalable software that empowers businesses and creates meaningful
+          impact.</p>
+        <div class="ta-footer-social">
+          <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="ta-footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html" style="color:var(--ta-accent);font-weight:700;">Careers</a></li>
+          <li><a href="index.html#ta-casestudy">Case Studies</a></li>
+          <li><a href="index.html#ta-whyus">Why Choose Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="ta-footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="services/custom-software-development.html">Custom Software Development</a></li>
+          <li><a href="services/website-development.html">Website Development</a></li>
+          <li><a href="services/mobile-app-development.html">Mobile App Development</a></li>
+          <li><a href="services/cloud-services.html">Cloud Services</a></li>
+          <li><a href="services/ai-machine-learning.html">AI &amp; Machine Learning</a></li>
+          <li><a href="services.html">View All 25 Services</a></li>
+        </ul>
+      </div>
+      <div class="ta-footer-col">
+        <h4>Contact Info</h4>
+        <div class="ta-footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          Chh. Sambhajinagar, Maharashtra, India
+        </div>
+        <div class="ta-footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5a2 2 0 0 1 2-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <a href="tel:+917020995651">+91 70209 95651</a>
+        </div>
+        <div class="ta-footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 5h18v14H3z" />
+            <path d="M3 6l9 7 9-7" />
+          </svg>
+          <a href="mailto:info@technoamaze.in">info@technoamaze.in</a>
+        </div>
+      </div>
+    </div>
+    <div class="ta-footer-bottom">
+      <p>&copy; 2026 <a href="index.html">Techno Amaze</a>. All rights reserved. &bull; <a href="admin/login.html" style="color:inherit;text-decoration:none;opacity:0.75;" title="Admin / HR Management Portal"><i class="fa-solid fa-lock" style="font-size:10px;"></i> Recruiter Portal</a></p>
+      <p>Designed with &#10084; by <a href="index.html">Techno Amaze Team</a></p>
+    </div>
+  </footer>
+
+  <button id="ta-back-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/careers.js"></script>
+</body>
+
+</html>

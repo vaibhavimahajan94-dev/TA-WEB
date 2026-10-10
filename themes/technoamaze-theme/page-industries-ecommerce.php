@@ -1,0 +1,154 @@
+<?php
+/**
+ * Template Name: Ecommerce (INDUSTRIES)
+ * Description: Custom template for Ecommerce (INDUSTRIES) page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+<!-- HERO SECTION -->
+  <section class="sp-hero" style="background:linear-gradient(135deg, var(--ta-surface) 0%, var(--ta-card-bg) 100%);">
+    <div class="sp-hero-grid">
+      <div>
+        <span class="ta-eyebrow" style="margin-bottom:18px;">
+          <i class="fa-solid fa-cart-shopping" style="color:#f77f00;"></i> E-Commerce &amp; Retail Engineering
+        </span>
+        <h1 class="ta-section-title" style="font-size:clamp(32px,4vw,54px);margin-bottom:20px;">
+          High-Converting <span class="ta-highlight-text">E-Commerce &amp; Retail</span> Tech
+        </h1>
+        <p class="ta-section-desc" style="font-size:clamp(15px,1.1vw,17px);margin-bottom:32px;max-width:580px;">
+          We build ultra-fast headless Next.js storefronts, AI recommendation engines, cloud POS systems, multi-vendor marketplaces, and omnichannel retail inventory platforms.
+        </p>
+        <div class="sp-btn-group">
+          <a href="contact.html?industry=ecommerce" class="ta-btn ta-btn-primary" style="padding:16px 32px;">
+            <i class="fa-solid fa-calendar-check"></i> Schedule E-Commerce Consultation
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div style="position:relative;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.15);border:1px solid var(--ta-border);">
+          <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=900&q=80" alt="E-Commerce Solutions" style="width:100%;height:380px;object-fit:cover;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(15,16,27,0.85) 0%, transparent 60%);"></div>
+          <div style="position:absolute;bottom:24px;left:24px;right:24px;color:#ffffff;">
+            <span style="padding:4px 12px;background:rgba(247,127,0,0.25);color:#f77f00;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Sub-Second Headless UX</span>
+            <h3 style="font-size:20px;font-weight:700;margin:8px 0 4px;color:#ffffff;">Next.js &amp; Shopify Plus Architecture</h3>
+            <p style="font-size:13px;opacity:0.85;margin:0;">Delivering 3.5x higher checkout conversions and 0.8s mobile page speeds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS TICKER -->
+  <section style="background:var(--ta-accent);padding:32px 20px;color:#ffffff;">
+    <div class="sp-grid-4" style="max-width:var(--ta-container);margin:0 auto;text-align:center;">
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">0.8s</div>
+        <div style="font-size:13px;opacity:0.9;">Average Mobile Load Time</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">240%</div>
+        <div style="font-size:13px;opacity:0.9;">Average Conversion Boost</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">10M+</div>
+        <div style="font-size:13px;opacity:0.9;">Monthly Orders Handled</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">99.99%</div>
+        <div style="font-size:13px;opacity:0.9;">Black Friday Uptime</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS GRID SECTION -->
+  <section style="padding:clamp(60px,8vw,100px) clamp(16px,4vw,60px);background:var(--ta-card-bg);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 60px;">
+        <span class="ta-eyebrow">E-Commerce &amp; Retail Capabilities</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">Engineering For Brands, Retailers &amp; Marketplaces</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">Omnichannel commerce solutions designed for high conversion, fast checkout, and seamless inventory management.</p>
+      </div>
+
+      <div class="sp-grid-3">
+        <!-- Solution 1 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(247,127,0,0.14);color:#f77f00;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Headless Commerce</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Next.js and React storefronts with headless Shopify/Commercetools backends for sub-second page loads and custom UX.</p>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-shop"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Multi-Vendor Marketplaces</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Amazon-style marketplace platforms with seller onboarding, commission engines, automated payouts, and rating systems.</p>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(6,214,160,0.14);color:#06d6a0;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">AI Recommendation Engines</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Machine learning algorithms for personalized product recommendations, dynamic bundle upsells, and cross-selling at checkout.</p>
+        </div>
+
+        <!-- Solution 4 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(0,180,216,0.14);color:#00b4d8;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-cash-register"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Cloud POS Systems</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Omnichannel Point-of-Sale software connecting physical store registers with online inventory in real-time.</p>
+        </div>
+
+        <!-- Solution 5 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(123,45,139,0.14);color:#7b2d8b;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Inventory &amp; Order Management</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Automated multi-warehouse inventory syncing, supplier purchasing orders, and automated returns management.</p>
+        </div>
+
+        <!-- Solution 6 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(46,196,182,0.14);color:#2ec4b6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Loyalty &amp; Mobile Shopping Apps</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Native iOS &amp; Android shopping apps with push notification sales alerts, one-click checkout, and tiered rewards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section style="padding:80px 20px;background:linear-gradient(135deg, #151726 0%, #0a0b10 100%);color:#ffffff;text-align:center;">
+    <div style="max-width:800px;margin:0 auto;">
+      <h2 style="font-family:var(--ta-font-head);font-size:clamp(28px,4vw,46px);font-weight:900;margin-bottom:20px;color:#ffffff;">
+        Scale Your Retail &amp; E-Commerce Sales
+      </h2>
+      <p style="font-size:17px;color:#cbd5e1;line-height:1.8;margin-bottom:36px;">
+        Build a high-performance storefront designed for conversion, speed, and global growth.
+      </p>
+      <div class="sp-btn-group" style="justify-content:center;">
+        <a href="contact.html?industry=ecommerce" class="ta-btn ta-btn-primary" style="padding:16px 36px;font-size:16px;">
+          <i class="fa-solid fa-calendar-check"></i> Book E-Commerce Audit
+        </a>
+      </div>
+    </div>
+  </section>
+
+<?php
+get_footer();

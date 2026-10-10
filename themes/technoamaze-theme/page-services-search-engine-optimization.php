@@ -1,0 +1,449 @@
+<?php
+/**
+ * Template Name: Search Engine Optimization (SERVICES)
+ * Description: Custom template for Search Engine Optimization (SERVICES) page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+<!-- ============================== 1. HERO SECTION ============================== -->
+  <section class="sp2-hero">
+    <div class="sp2-hero-inner"><div>
+        <nav style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ta-muted);margin-bottom:16px;" aria-label="Breadcrumb">
+          <a href="../index.html" style="color:var(--ta-muted);transition:color .2s;">Home</a>
+          <span><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></span>
+          <a href="../services.html" style="color:var(--ta-muted);transition:color .2s;">Services</a>
+          <span><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></span>
+          <span style="color:var(--ta-accent);font-weight:600;">Search Engine Optimization</span>
+        </nav>
+
+        <h1 class="ta-section-title" style="font-size:clamp(30px,3.8vw,52px);line-height:1.2;margin-bottom:20px;">
+          Search <span class="ta-highlight-text">Engine Optimization</span>
+        </h1>
+        <p class="ta-section-desc" style="font-size:clamp(15px,1.1vw,17px);margin-bottom:32px;max-width:580px;line-height:1.75;">
+          Dominate Google Rankings, Drive High-Intent Traffic & Outrank Competitors. We combine deep domain expertise, cutting-edge technology stacks, and agile methodologies to deliver measurable business ROI.
+        </p>
+        <div class="sp2-hero-btns">
+          <a href="#ta-contact" class="sp2-btn-primary" style="padding:16px 32px;">
+            <i class="fa-solid fa-paper-plane"></i> Get Free Consultation
+          </a>
+          <a href="#capabilities" class="sp2-btn-outline" style="padding:16px 28px;">
+            <i class="fa-solid fa-list-check"></i> Explore Capabilities
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div style="position:relative;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.15);border:1px solid var(--ta-border);">
+          <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1400&q=85&auto=format&fit=crop" alt="Search Engine Optimization" style="width:100%;height:380px;object-fit:cover;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(15,16,27,0.85) 0%, transparent 60%);"></div>
+          <div style="position:absolute;bottom:24px;left:24px;right:24px;color:#ffffff;">
+            <span style="padding:4px 12px;background:rgba(200,0,110,0.3);color:#ff79b8;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Enterprise Grade</span>
+            <h3 style="font-size:20px;font-weight:700;margin:8px 0 4px;color:#ffffff;">Search Engine Optimization</h3>
+            <p style="font-size:13px;opacity:0.85;margin:0;">Delivering scalable, secure, and battle-tested digital solutions for global enterprises.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 2. KPI / METRICS STRIP ============================== -->
+  <section class="sp2-kpi"><div class="sp2-kpi-inner" style="max-width:var(--ta-container);margin:0 auto;text-align:center;">
+            <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">#1 Rank</div>
+        <div style="font-size:13px;opacity:0.9;">Rankings for High-Value Buyer Keywords</div>
+      </div>      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">300%+</div>
+        <div style="font-size:13px;opacity:0.9;">Average Organic Traffic Growth</div>
+      </div>      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">100%</div>
+        <div style="font-size:13px;opacity:0.9;">White-Hat SEO Methodologies</div>
+      </div>      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">150+</div>
+        <div style="font-size:13px;opacity:0.9;">Websites Ranked on Page 1</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 3. EXECUTIVE OVERVIEW & PROBLEM/SOLUTION ============================== -->
+  <section style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-card-bg);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div class="sp2-two-col">
+        <div>
+          <span class="ta-eyebrow">Strategic Executive Overview</span>
+          <h2 class="ta-section-title" style="margin-top:10px;margin-bottom:20px;font-size:clamp(26px,3vw,38px);">
+            Capturing High-Intent Customers Exactly When They Search For Your Services
+          </h2>
+          <p style="color:var(--ta-muted);font-size:16px;line-height:1.8;margin-bottom:24px;">
+            Search engine optimization is the highest-ROI marketing channel for sustainable, long-term business growth. Techno Amaze provides data-backed, white-hat SEO services designed to secure top Google rankings for the exact keywords your prospective customers use. We combine deep technical SEO audits, content optimization, and high-authority link building to build lasting organic dominance.
+          </p>
+        </div>
+
+        <div style="background:var(--ta-surface);padding:32px;border-radius:20px;border:1px solid var(--ta-border);">
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-triangle-exclamation" style="color:#e63946;"></i> Challenges Solved
+          </h3>
+          <ul style="margin-bottom:24px;display:flex;flex-direction:column;gap:10px;">
+                        <li style="font-size:14px;color:var(--ta-muted);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-xmark" style="color:#e63946;margin-top:4px;flex-shrink:0;"></i>
+              <span>Invisibility on Google search results for valuable high-intent commercial keywords</span>
+            </li>            <li style="font-size:14px;color:var(--ta-muted);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-xmark" style="color:#e63946;margin-top:4px;flex-shrink:0;"></i>
+              <span>Technical website issues (slow load times, crawl errors, broken redirects) hurting rankings</span>
+            </li>            <li style="font-size:14px;color:var(--ta-muted);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-xmark" style="color:#e63946;margin-top:4px;flex-shrink:0;"></i>
+              <span>Low-quality content that fails to satisfy Google helpful content and E-E-A-T guidelines</span>
+            </li>            <li style="font-size:14px;color:var(--ta-muted);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-xmark" style="color:#e63946;margin-top:4px;flex-shrink:0;"></i>
+              <span>Penalties or traffic drops caused by algorithm updates or legacy toxic backlinks</span>
+            </li>
+          </ul>
+
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-circle-check" style="color:#06d6a0;"></i> Techno Amaze Solution
+          </h3>
+          <ul style="display:flex;flex-direction:column;gap:10px;">
+                        <li style="font-size:14px;color:var(--ta-ink);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-check" style="color:#06d6a0;margin-top:4px;flex-shrink:0;"></i>
+              <span>Comprehensive technical SEO fixes resolving Core Web Vitals, indexation, and structured data</span>
+            </li>            <li style="font-size:14px;color:var(--ta-ink);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-check" style="color:#06d6a0;margin-top:4px;flex-shrink:0;"></i>
+              <span>In-depth competitor keyword research targeting high-converting transactional search terms</span>
+            </li>            <li style="font-size:14px;color:var(--ta-ink);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-check" style="color:#06d6a0;margin-top:4px;flex-shrink:0;"></i>
+              <span>Authoritative, human-written content engineered to rank and convert visitors into buyers</span>
+            </li>            <li style="font-size:14px;color:var(--ta-ink);display:flex;align-items:flex-start;gap:10px;">
+              <i class="fa-solid fa-check" style="color:#06d6a0;margin-top:4px;flex-shrink:0;"></i>
+              <span>White-hat outreach and digital PR earning permanent backlinks from reputable industry publications</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 4. CORE CAPABILITIES ============================== -->
+  <section id="capabilities" style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-surface);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 60px;">
+        <span class="ta-eyebrow">Comprehensive Capabilities</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">What We Deliver in Search Engine Optimization</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">End-to-end specialized deliverables engineered to elevate your technical capabilities and drive sustainable growth.</p>
+      </div>
+
+      <div class="sp2-features-grid">
+                <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Technical SEO & Core Web Vitals</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Fixing crawl errors, sitemaps, robots.txt, canonicalization, mobile responsiveness, and site speed.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: Full technical SEO audit and direct code implementation
+          </div>
+        </div>        <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Buyer-Intent Keyword Research</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Identifying high-volume, low-competition keywords that map directly to high-intent buyer searches.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: Comprehensive keyword master strategy and content calendar
+          </div>
+        </div>        <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">On-Page Content Optimization</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Optimizing title tags, meta descriptions, H1-H3 headings, internal linking, and semantic schema markup.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: Fully optimized page content adhering to Google E-E-A-T standards
+          </div>
+        </div>        <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-link"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">High-Authority Link Building & Digital PR</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Acquiring contextual, high-domain-authority (DA 50+) backlinks from trusted industry websites.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: High-quality editorial backlinks that build domain authority
+          </div>
+        </div>        <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Local SEO & Google Business Profile</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Optimizing Google Maps presence, local business citations, NAP consistency, and customer reviews.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: Top 3 Google Local Pack rankings in target service areas
+          </div>
+        </div>        <div class="sp2-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Rank Tracking & Transparent Reporting</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;margin-bottom:18px;">Daily keyword rank tracking, organic conversion monitoring, and monthly Looker Studio reporting.</p>
+          <div style="padding-top:14px;border-top:1px dashed var(--ta-border);font-size:12px;color:var(--ta-accent);font-weight:600;">
+            <i class="fa-solid fa-box-archive"></i> Deliverable: Live 24/7 SEO performance dashboard
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 5. TECHNOLOGY STACK ============================== -->
+  <section style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-card-bg);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 50px;">
+        <span class="ta-eyebrow">Enterprise Tech Stack</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">Modern Tools &amp; Frameworks We Master</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">We build on industry-standard, robust technologies that ensure long-term stability, security, and developer velocity.</p>
+      </div>
+
+      <div class="sp2-features-grid" style="gap:24px;">
+                <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:16px;font-weight:700;color:var(--ta-ink);margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+            <i class="fa-solid fa-layer-group" style="color:var(--ta-accent);font-size:14px;"></i> SEO & Research Tools
+          </h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                        <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Ahrefs
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              SEMrush
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Google Search Console
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Screaming Frog SEO Spider
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              SurferSEO
+            </span>
+          </div>
+        </div>        <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:16px;font-weight:700;color:var(--ta-ink);margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+            <i class="fa-solid fa-layer-group" style="color:var(--ta-accent);font-size:14px;"></i> Speed & Core Web Vitals
+          </h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                        <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Google PageSpeed Insights
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              GTmetrix
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Lighthouse
+            </span>
+          </div>
+        </div>        <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:16px;font-weight:700;color:var(--ta-ink);margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+            <i class="fa-solid fa-layer-group" style="color:var(--ta-accent);font-size:14px;"></i> Rank Tracking & Reporting
+          </h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                        <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Looker Studio
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              AccuRanker
+            </span>            <span style="background:var(--ta-card-bg);border:1px solid var(--ta-border);color:var(--ta-ink);font-size:12px;font-weight:500;padding:6px 12px;border-radius:20px;">
+              Google Analytics 4
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 6. DELIVERY METHODOLOGY (HOW WE DELIVER) ============================== -->
+  <section style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-surface);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 60px;">
+        <span class="ta-eyebrow">Proven Execution Framework</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">How We Deliver Search Engine Optimization</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">A structured 5-step delivery lifecycle ensuring transparency, rapid milestones, and zero regressions.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:24px;">
+                <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:18px;padding:28px 22px;position:relative;">
+          <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;color:var(--ta-accent);opacity:0.8;margin-bottom:12px;">01</div>
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;">Comprehensive Technical Audit</h3>
+          <p style="font-size:13px;color:var(--ta-muted);line-height:1.7;">Crawling every URL on your domain to identify broken links, crawl blocks, duplicate content, and speed issues.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:18px;padding:28px 22px;position:relative;">
+          <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;color:var(--ta-accent);opacity:0.8;margin-bottom:12px;">02</div>
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;">Keyword Research & Competitor Gap Analysis</h3>
+          <p style="font-size:13px;color:var(--ta-muted);line-height:1.7;">Identifying keyword opportunities your competitors are ranking for and mapping them to landing pages.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:18px;padding:28px 22px;position:relative;">
+          <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;color:var(--ta-accent);opacity:0.8;margin-bottom:12px;">03</div>
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;">On-Page & Structural Optimization</h3>
+          <p style="font-size:13px;color:var(--ta-muted);line-height:1.7;">Revamping metadata, heading tags, internal linking, schema markup, and content depth.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:18px;padding:28px 22px;position:relative;">
+          <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;color:var(--ta-accent);opacity:0.8;margin-bottom:12px;">04</div>
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;">Content Production & Digital PR</h3>
+          <p style="font-size:13px;color:var(--ta-muted);line-height:1.7;">Publishing comprehensive topic cluster guides and earning authoritative backlinks through targeted outreach.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:18px;padding:28px 22px;position:relative;">
+          <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;color:var(--ta-accent);opacity:0.8;margin-bottom:12px;">05</div>
+          <h3 style="font-family:var(--ta-font-head);font-size:18px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;">Monitoring, Refinement & Ranking Gains</h3>
+          <p style="font-size:13px;color:var(--ta-muted);line-height:1.7;">Tracking organic impressions, clicks, conversions, and continuously optimizing underperforming pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 7. INDUSTRY USE CASES ============================== -->
+  <section style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-card-bg);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 60px;">
+        <span class="ta-eyebrow">Real-World Application</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">Industry Use Cases &amp; Success Stories</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">How our Search Engine Optimization expertise solves critical sector-specific problems.</p>
+      </div>
+
+      <div class="sp2-two-col" style="gap:28px;">
+                <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:18px;padding:32px;border-left:4px solid var(--ta-accent);">
+          <span style="display:inline-block;padding:4px 12px;background:rgba(200,0,110,0.12);color:var(--ta-accent);border-radius:20px;font-size:12px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">
+            B2B Software & SaaS
+          </span>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Organic Demo Pipeline Scaling</h3>
+          <p style="font-size:14px;color:var(--ta-muted);line-height:1.75;">Ranked SaaS product on Page 1 for 45+ high-intent keywords, driving 1,800+ monthly organic demo signups.</p>
+        </div>        <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:18px;padding:32px;border-left:4px solid var(--ta-accent);">
+          <span style="display:inline-block;padding:4px 12px;background:rgba(200,0,110,0.12);color:var(--ta-accent);border-radius:20px;font-size:12px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">
+            Healthcare & Specialized Clinics
+          </span>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Local Medical Search Dominance</h3>
+          <p style="font-size:14px;color:var(--ta-muted);line-height:1.75;">Captured #1 Google Local Pack rankings across 8 regional clinic locations, doubling patient calls in 5 months.</p>
+        </div>        <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:18px;padding:32px;border-left:4px solid var(--ta-accent);">
+          <span style="display:inline-block;padding:4px 12px;background:rgba(200,0,110,0.12);color:var(--ta-accent);border-radius:20px;font-size:12px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">
+            E-Commerce Store
+          </span>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Category Page SEO & Revenue Boost</h3>
+          <p style="font-size:14px;color:var(--ta-muted);line-height:1.75;">Optimized 350+ e-commerce product category pages, resulting in a 240% increase in non-branded organic revenue.</p>
+        </div>        <div style="background:var(--ta-surface);border:1px solid var(--ta-border);border-radius:18px;padding:32px;border-left:4px solid var(--ta-accent);">
+          <span style="display:inline-block;padding:4px 12px;background:rgba(200,0,110,0.12);color:var(--ta-accent);border-radius:20px;font-size:12px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">
+            Legal & Financial Services
+          </span>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">High-Ticket Client Acquisition</h3>
+          <p style="font-size:14px;color:var(--ta-muted);line-height:1.75;">Ranked boutique law firm #1 for high-ticket commercial litigation terms, generating $400k+ in legal retainers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 8. FREQUENTLY ASKED QUESTIONS (FAQ) ============================== -->
+  <section style="padding:clamp(60px,7vw,100px) clamp(16px,4vw,60px);background:var(--ta-surface);">
+    <div style="max-width:860px;margin:0 auto;">
+      <div style="text-align:center;margin-bottom:50px;">
+        <span class="ta-eyebrow">Got Questions?</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">Frequently Asked Questions</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">Common questions about our Search Engine Optimization process, pricing models, and timelines.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+                <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:17px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-circle-question" style="color:var(--ta-accent);"></i> How long does it take for SEO to show meaningful results?
+          </h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.75;margin:0;padding-left:26px;">Typically, technical fixes and low-hanging keyword gains appear within 4 to 8 weeks. Significant organic traffic growth and competitive Page 1 rankings are achieved within 3 to 6 months of consistent execution.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:17px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-circle-question" style="color:var(--ta-accent);"></i> Do you use safe, white-hat SEO techniques?
+          </h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.75;margin:0;padding-left:26px;">Yes, 100%. We strictly follow Google Search Essentials (Webmaster Guidelines). We never use automated link spam, private blog networks (PBNs), or deceptive black-hat techniques.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:17px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-circle-question" style="color:var(--ta-accent);"></i> How do you choose which keywords to target?
+          </h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.75;margin:0;padding-left:26px;">We prioritize commercial and transactional intent keywords — terms searched by users ready to buy, book a consultation, or purchase software, rather than vanity informational keywords with low conversion rates.</p>
+        </div>        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:16px;padding:24px;">
+          <h3 style="font-family:var(--ta-font-head);font-size:17px;font-weight:700;color:var(--ta-ink);margin-bottom:10px;display:flex;align-items:center;gap:10px;">
+            <i class="fa-solid fa-circle-question" style="color:var(--ta-accent);"></i> Do I get regular reports on keyword rankings and traffic?
+          </h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.75;margin:0;padding-left:26px;">Yes! You will have access to a live Looker Studio dashboard tracking daily keyword position movements, organic traffic sessions, and conversions, accompanied by detailed monthly reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 9. CONTACT SECTION (HOME REPLICA) ============================== -->
+  <section id="ta-contact" class="ta-section-reveal" aria-labelledby="contact-heading" style="padding-top:40px;">
+    <h2 id="contact-heading" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Contact Techno Amaze</h2>
+    <div class="ta-contact-img" data-reveal="left">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="Team collaborating">
+    </div>
+    <div class="ta-contact-strip">
+      <div class="ta-contact-strip-inner">
+        <h3 class="ta-contact-strip-heading">Request a Consultation</h3>
+        <span class="ta-contact-strip-text">Get Started with Search Engine Optimization</span>
+      </div>
+    </div>
+    <div class="ta-contact-right" data-reveal="right">
+      <div class="ta-contact-card">
+        <form id="ta-home-contact-form" novalidate>
+          <input type="hidden" name="source" value="Search Engine Optimization Landing Page">
+          <input type="text" name="_honey" class="ta-form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input class="ta-contact-field" type="text" name="name" placeholder="Your Name" aria-label="Your Name" autocomplete="name" required>
+          <input class="ta-contact-field" type="email" name="email" placeholder="Email Address" aria-label="Email Address" autocomplete="email" required>
+          <input class="ta-contact-field" type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" autocomplete="tel" required>
+          <input class="ta-contact-field" type="text" name="subject" value="Inquiry: Search Engine Optimization" placeholder="Subject" aria-label="Subject" required>
+          <textarea class="ta-contact-field ta-contact-textarea" name="message" placeholder="Describe your project requirements, timeline, or questions..." aria-label="Message" required></textarea>
+          <button type="submit" class="ta-contact-submit" id="ta-home-submit-btn">Send Inquiry &amp; Get Quote &#8594;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FOOTER ============================== -->
+
+  <!-- OTHER SERVICES SECTION -->
+  <section class="sp2-other-services">
+    <div class="sp2-other-services-inner">
+      <div class="sp2-other-services-header">
+        <div>
+          <p class="sp2-section-eyebrow">Techno Amaze</p>
+          <h2 class="sp2-section-title">Explore Our Other Services</h2>
+          <p class="sp2-other-services-desc">We offer a complete suite of digital services. Explore what else Techno Amaze can do for your business.</p>
+        </div>
+        <a href="../services.html" class="sp2-other-services-viewall">View All 25 Services <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="sp2-services-list">
+        <a href="custom-software-development.html" class="sp2-service-link"><i class="fa-solid fa-code"></i> Custom Software Dev</a>
+        <a href="website-development.html" class="sp2-service-link"><i class="fa-solid fa-globe"></i> Website Development</a>
+        <a href="mobile-app-development.html" class="sp2-service-link"><i class="fa-solid fa-mobile-screen"></i> Mobile App Development</a>
+        <a href="ecommerce-development.html" class="sp2-service-link"><i class="fa-solid fa-cart-shopping"></i> E-commerce Development</a>
+        <a href="saas-product-development.html" class="sp2-service-link"><i class="fa-solid fa-cloud-arrow-up"></i> SaaS Product Dev</a>
+        <a href="cloud-services.html" class="sp2-service-link"><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</a>
+        <a href="ai-machine-learning.html" class="sp2-service-link"><i class="fa-solid fa-brain"></i> AI &amp; Machine Learning</a>
+        <a href="ui-ux-design.html" class="sp2-service-link"><i class="fa-solid fa-pen-nib"></i> UI/UX &amp; Branding</a>
+        <a href="cybersecurity-services.html" class="sp2-service-link"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</a>
+        <a href="digital-marketing.html" class="sp2-service-link"><i class="fa-solid fa-chart-line"></i> Digital Marketing</a>
+        <a href="api-development-integration.html" class="sp2-service-link"><i class="fa-solid fa-plug"></i> API Integration</a>
+        <a href="data-analytics.html" class="sp2-service-link"><i class="fa-solid fa-chart-bar"></i> Data Analytics</a>
+        <a href="devops-services.html" class="sp2-service-link"><i class="fa-solid fa-gears"></i> DevOps Services</a>
+        <a href="erp-crm-development.html" class="sp2-service-link"><i class="fa-solid fa-sitemap"></i> ERP &amp; CRM Dev</a>
+        <a href="software-testing-qa.html" class="sp2-service-link"><i class="fa-solid fa-bug-slash"></i> Software Testing &amp; QA</a>
+        <a href="software-maintenance-support.html" class="sp2-service-link"><i class="fa-solid fa-screwdriver-wrench"></i> Software Maintenance</a>
+        <a href="it-consulting.html" class="sp2-service-link"><i class="fa-solid fa-lightbulb"></i> IT Consulting</a>
+        <a href="content-marketing.html" class="sp2-service-link"><i class="fa-solid fa-newspaper"></i> Content Marketing</a>
+        <a href="search-engine-optimization.html" class="sp2-service-link"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</a>
+        <a href="social-media-marketing.html" class="sp2-service-link"><i class="fa-brands fa-instagram"></i> Social Media Marketing</a>
+        <a href="google-meta-ads.html" class="sp2-service-link"><i class="fa-brands fa-google"></i> Google &amp; Meta Ads</a>
+        <a href="email-marketing.html" class="sp2-service-link"><i class="fa-solid fa-envelope-open-text"></i> Email Marketing</a>
+        <a href="lead-generation.html" class="sp2-service-link"><i class="fa-solid fa-user-plus"></i> Lead Generation</a>
+        <a href="online-reputation-management.html" class="sp2-service-link"><i class="fa-solid fa-star-half-stroke"></i> Online Reputation</a>
+        <a href="graphic-design-branding.html" class="sp2-service-link"><i class="fa-solid fa-palette"></i> Graphic Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG CTA SECTION -->
+  <section class="sp2-blog-cta">
+    <div class="sp2-blog-cta-inner">
+      <div>
+        <p class="sp2-blog-cta-eyebrow">Insights &amp; Resources</p>
+        <h2>Explore Our Blog &amp; Thought Leadership</h2>
+        <p>Stay ahead with expert articles, how-to guides, industry insights, and technology deep-dives by the Techno Amaze team.</p>
+      </div>
+      <a href="../blog.html" class="sp2-blog-btn"><i class="fa-solid fa-book-open"></i> Explore Blog</a>
+    </div>
+  </section>
+
+<?php
+get_footer();

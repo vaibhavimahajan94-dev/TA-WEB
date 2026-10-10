@@ -1,0 +1,278 @@
+<?php
+/**
+ * Template Name: Academy (PRODUCTS)
+ * Description: Custom template for Academy (PRODUCTS) page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+<!-- ══════════════════════════ ACADEMY HERO ══════════════════════════ -->
+  <section class="sp-hero">
+    <div class="sp-hero-grid">
+      <div>
+        <span class="ta-eyebrow" style="margin-bottom:18px;">
+          <i class="fa-solid fa-graduation-cap"></i> Official EdTech App by Techno Amaze
+        </span>
+        <h1 class="ta-section-title" style="font-size:clamp(32px,4vw,54px);margin-bottom:20px;">
+          Techno Amaze Academy — Smart <span class="ta-highlight-text">EdTech &amp; LMS</span> App
+        </h1>
+        <p class="ta-section-desc" style="font-size:clamp(15px,1.1vw,17px);margin-bottom:32px;max-width:560px;">
+          Transform your coaching center, school, or institute into a digital powerhouse. Techno Amaze Academy is the complete mobile LMS solution — featuring interactive live classes, online test series, automated performance reports, study material distribution, and instant WhatsApp parent alerts.
+        </p>
+
+        <!-- Standardized CTA Button Group -->
+        <div class="sp-btn-group" style="margin-bottom:36px;">
+          <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank"
+            rel="noopener" class="ta-btn ta-btn-primary" style="padding:16px 28px;">
+            <i class="fa-brands fa-google-play" style="font-size:18px;"></i> Download Academy App
+          </a>
+          <a href="contact.html?product=academy" class="ta-btn ta-btn-dark" style="padding:16px 28px;">
+            <i class="fa-solid fa-laptop"></i> Web LMS Dashboard
+          </a>
+          <a href="contact.html?product=academy" class="ta-btn ta-btn-ghost" style="padding:16px 24px;">
+            <i class="fa-solid fa-headset"></i> Request Free Demo
+          </a>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:20px;padding-top:20px;border-top:1px solid var(--ta-border);">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <i class="fa-solid fa-star" style="color:#f59e0b;font-size:18px;"></i>
+            <strong style="font-size:16px;color:var(--ta-ink);">4.9 / 5.0 Rating</strong>
+            <span style="font-size:13px;color:var(--ta-muted);">(Google Play Store)</span>
+          </div>
+          <div style="height:20px;width:1px;background:var(--ta-border);"></div>
+          <div style="font-size:13px;color:var(--ta-muted);">
+            <strong style="color:var(--ta-ink);font-size:15px;">100,000+</strong> Active Learners
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Academy Visual Demo Box -->
+      <div class="sp-seat-box">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--ta-border);flex-wrap:wrap;gap:10px;">
+          <div>
+            <h3 style="font-size:16px;font-weight:700;color:var(--ta-ink);margin:0;">JEE / NEET Batch A — Live Test Series</h3>
+            <span style="font-size:12px;color:var(--ta-muted);">Active Exam: Full Mock Test #04</span>
+          </div>
+          <span style="padding:4px 12px;background:rgba(6,214,160,0.14);color:#06d6a0;border-radius:20px;font-size:11px;font-weight:700;">Live Now</span>
+        </div>
+
+        <!-- Academy LMS Simulation Grid -->
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--ta-surface);border-radius:12px;border-left:4px solid var(--ta-accent);">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <i class="fa-solid fa-video" style="color:var(--ta-accent);font-size:18px;"></i>
+              <div>
+                <strong style="font-size:13px;color:var(--ta-ink);">Physics — Quantum Mechanics</strong>
+                <div style="font-size:11px;color:var(--ta-muted);">Dr. R. Sharma | 1,420 Students Attending</div>
+              </div>
+            </div>
+            <span style="padding:3px 10px;background:rgba(200,0,110,0.14);color:var(--ta-accent);font-size:11px;font-weight:700;border-radius:20px;">HD Stream</span>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--ta-surface);border-radius:12px;border-left:4px solid #06d6a0;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <i class="fa-solid fa-file-pen" style="color:#06d6a0;font-size:18px;"></i>
+              <div>
+                <strong style="font-size:13px;color:var(--ta-ink);">Chemistry — Organic Reactions Test</strong>
+                <div style="font-size:11px;color:var(--ta-muted);">Instant Rank &amp; Negative Marking Analysis</div>
+              </div>
+            </div>
+            <span style="padding:3px 10px;background:rgba(6,214,160,0.14);color:#06d6a0;font-size:11px;font-weight:700;border-radius:20px;">Auto Grade</span>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--ta-surface);border-radius:12px;border-left:4px solid #00b4d8;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <i class="fa-solid fa-file-pdf" style="color:#00b4d8;font-size:18px;"></i>
+              <div>
+                <strong style="font-size:13px;color:var(--ta-ink);">Mathematics — Calculus Notes PDF</strong>
+                <div style="font-size:11px;color:var(--ta-muted);">Watermarked Digital Material</div>
+              </div>
+            </div>
+            <span style="padding:3px 10px;background:rgba(0,180,216,0.14);color:#00b4d8;font-size:11px;font-weight:700;border-radius:20px;">Protected</span>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:space-around;padding:12px;background:var(--ta-surface);border-radius:12px;font-size:12px;color:var(--ta-muted);flex-wrap:wrap;gap:8px;">
+          <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#06d6a0;margin-right:6px;"></span> Active Batches (32)</div>
+          <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#00b4d8;margin-right:6px;"></span> Tests Taken (45,000+)</div>
+          <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#C8006E;margin-right:6px;"></span> Play Store Rated (4.9 ★)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS TICKER -->
+  <section style="background:var(--ta-accent);padding:32px 20px;color:#ffffff;">
+    <div class="sp-grid-4" style="max-width:var(--ta-container);margin:0 auto;text-align:center;">
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">100,000+</div>
+        <div style="font-size:13px;opacity:0.9;">Active Students &amp; Learners</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">250+</div>
+        <div style="font-size:13px;opacity:0.9;">Coaching Institutes &amp; Schools</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">99.8%</div>
+        <div style="font-size:13px;opacity:0.9;">Exam Attendance Rate</div>
+      </div>
+      <div>
+        <div style="font-family:var(--ta-font-head);font-size:32px;font-weight:900;">4.9 ★</div>
+        <div style="font-size:13px;opacity:0.9;">Google Play Store Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE FEATURES SECTION -->
+  <section style="padding:clamp(60px,8vw,100px) clamp(16px,4vw,60px);background:var(--ta-card-bg);">
+    <div style="max-width:var(--ta-container);margin:0 auto;">
+      <div style="text-align:center;max-width:720px;margin:0 auto 60px;">
+        <span class="ta-eyebrow">Complete EdTech &amp; LMS Suite</span>
+        <h2 class="ta-section-title" style="margin-top:10px;">Built For Schools, Colleges &amp; Coaching Centers</h2>
+        <p class="ta-section-desc" style="margin-top:12px;">Techno Amaze Academy combines live streaming, automated exams, homework submissions, fee collection, and parent communication into one seamless Android app.</p>
+      </div>
+
+      <div class="sp-grid-3">
+        <!-- Feature 1 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(200,0,110,0.12);color:var(--ta-accent);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Interactive Live Classes</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Conduct HD live streams with real-time student Q&amp;A chat, interactive whiteboards, and automatic class recordings for revision.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(6,214,160,0.14);color:#06d6a0;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Smart Online Test Series</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Create timed MCQs and subjective exams. Instant AI grading, percentile scorecards, subject-wise analytics, and All-India ranks.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(0,180,216,0.14);color:#00b4d8;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">WhatsApp Parent Alerts</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Auto-send student daily attendance, test scorecard cards, fee reminder links, and exam timetables directly to parents' WhatsApp.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(247,127,0,0.14);color:#f77f00;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Encrypted Study Notes</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Upload DRM-protected PDFs, e-books, and video lectures. Prevent unauthorized screen recording and unauthorized downloads.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(123,45,139,0.14);color:#7b2d8b;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Automated Fee Collection</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Collect course fees via UPI, credit cards, or netbanking. Auto-generate digital fee receipts and grant instant course access.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="sp-feature-card">
+          <div style="width:54px;height:54px;border-radius:14px;background:rgba(46,196,182,0.14);color:#2ec4b6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3 style="font-family:var(--ta-font-head);font-size:20px;font-weight:700;color:var(--ta-ink);margin-bottom:12px;">Custom Branded Mobile App</h3>
+          <p style="color:var(--ta-muted);font-size:14px;line-height:1.7;">Get your own white-labeled Android app published on Google Play Store under your coaching or institute name.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LMS APP & DASHBOARD SHOWCASE SECTION -->
+  <section style="padding:clamp(50px,6vw,80px) clamp(16px,4vw,60px);background:var(--ta-bg);border-top:1px solid var(--ta-border);border-bottom:1px solid var(--ta-border);">
+    <div style="max-width:var(--ta-container);margin:0 auto;text-align:center;">
+      <span class="ta-eyebrow">Smart EdTech Product Showcase</span>
+      <h2 class="ta-section-title" style="margin-top:10px;margin-bottom:16px;">
+        Interactive Learning &amp; Institute Management App
+      </h2>
+      <p class="ta-section-desc" style="max-width:700px;margin:0 auto 36px;">
+        Deliver rich live lecture experiences, automated test series evaluation, protected study PDF notes, and instant parent communication.
+      </p>
+      <div style="max-width:1050px;margin:0 auto;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.18);border:1px solid var(--ta-border);background:var(--ta-card-bg);">
+        <div style="background:#1e293b;padding:12px 18px;display:flex;align-items:center;gap:8px;">
+          <span style="width:11px;height:11px;border-radius:50%;background:#ef4444;display:inline-block;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#f59e0b;display:inline-block;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#10b981;display:inline-block;"></span>
+          <span style="color:#94a3b8;font-size:12px;margin-left:12px;font-family:monospace;">Techno Amaze Academy — Official Platform</span>
+        </div>
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/academy_product_image.jpg?v=' . filemtime(get_template_directory() . '/assets/images/academy_product_image.jpg')); ?>" alt="Techno Amaze Academy Product Preview" style="width:100%;height:auto;display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILE APP SHOWCASE SECTION -->
+  <section style="padding:clamp(60px,8vw,100px) clamp(16px,4vw,60px);background:var(--ta-surface);">
+    <div class="sp-grid-2" style="max-width:var(--ta-container);margin:0 auto;">
+      <div>
+        <span class="ta-eyebrow">Official EdTech Android App</span>
+        <h2 class="ta-section-title" style="margin-top:10px;line-height:1.2;">
+          Download Techno Amaze Academy On Google Play
+        </h2>
+        <p class="ta-section-desc" style="margin:20px 0 30px;">
+          Empower students to learn anytime, anywhere. Take live quizzes, download offline notes, watch video lectures, and track personal growth on your smartphone.
+        </p>
+        <div class="sp-btn-group">
+          <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank"
+            rel="noopener" class="ta-btn ta-btn-primary" style="padding:16px 32px;font-size:16px;">
+            <i class="fa-brands fa-google-play" style="font-size:22px;"></i> Download Academy App
+          </a>
+          <a href="contact.html?product=academy" class="ta-btn ta-btn-dark" style="padding:16px 28px;font-size:15px;">
+            <i class="fa-solid fa-laptop"></i> Web LMS Portal
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:var(--ta-card-bg);border:1px solid var(--ta-border);border-radius:24px;padding:36px 28px;box-shadow:0 16px 40px rgba(0,0,0,0.08);text-align:center;">
+          <i class="fa-brands fa-google-play" style="font-size:64px;color:var(--ta-accent);margin-bottom:16px;"></i>
+          <h3 style="font-family:var(--ta-font-head);font-size:22px;font-weight:800;color:var(--ta-ink);margin-bottom:8px;">Techno Amaze Academy App</h3>
+          <p style="color:var(--ta-muted);font-size:14px;margin-bottom:24px;">Package ID: <code style="background:var(--ta-surface);padding:4px 10px;border-radius:6px;color:var(--ta-accent);font-weight:600;">com.technoamaze.academy</code></p>
+          <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank"
+            rel="noopener" class="ta-btn ta-btn-primary" style="width:100%;justify-content:center;padding:14px 24px;">
+            Download Play Store App <i class="fa-solid fa-download" style="margin-left:8px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section style="padding:80px 20px;background:linear-gradient(135deg, #151726 0%, #0a0b10 100%);color:#ffffff;text-align:center;">
+    <div style="max-width:800px;margin:0 auto;">
+      <h2 style="font-family:var(--ta-font-head);font-size:clamp(28px,4vw,46px);font-weight:900;margin-bottom:20px;color:#ffffff;">
+        Digitize Your Academy With Techno Amaze Today
+      </h2>
+      <p style="font-size:17px;color:#cbd5e1;line-height:1.8;margin-bottom:36px;">
+        Join 250+ institutes and 100,000+ happy learners. Launch your branded LMS app in less than 24 hours.
+      </p>
+      <div class="sp-btn-group" style="justify-content:center;">
+        <a href="https://play.google.com/store/apps/details?id=com.technoamaze.academy&hl=gu" target="_blank"
+          rel="noopener" class="ta-btn ta-btn-primary" style="padding:16px 36px;font-size:16px;">
+          <i class="fa-brands fa-google-play"></i> Get Play Store App
+        </a>
+        <a href="contact.html?product=academy" class="ta-btn" style="background:#ffffff;color:#151726;padding:16px 32px;font-size:15px;font-weight:700;border-radius:8px;">
+          <i class="fa-solid fa-headset"></i> Request Free Demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+<?php
+get_footer();

@@ -1,0 +1,110 @@
+<?php
+/**
+ * Template Name: Contact Us
+ * Description: Custom template for Contact Us page.
+ *
+ * @package TechnoAmaze
+ * @version 1.0.0
+ */
+
+get_header();
+?>
+
+
+  <!-- PAGE HERO -->
+  <section id="ta-contact-hero" class="ta-contact-page-hero" aria-labelledby="contact-page-title">
+    <div class="ta-contact-page-hero-inner">
+      <div class="ta-eyebrow ta-eyebrow--center">Contact Us</div>
+      <h1 class="ta-section-title ta-section-title--white" id="contact-page-title">Let&rsquo;s Start Your Next Project
+      </h1>
+      <p class="ta-section-desc ta-section-desc--center">Have a question or ready to build something great? Fill out
+        the form below and our team will get back to you within 48 hours.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE MAIN -->
+  <section id="ta-contact-page" class="ta-section-reveal" aria-labelledby="contact-form-heading">
+    <div class="ta-contact-page-grid">
+      <div class="ta-contact-page-info" data-reveal="left">
+        <h2 class="ta-section-title" id="contact-form-heading">Get In Touch</h2>
+        <p class="ta-section-desc">We&rsquo;re here to help with software development, design, marketing, and IT
+          consulting. Reach out anytime.</p>
+
+        <div class="ta-contact-info-list">
+          <div class="ta-contact-info-item">
+            <div class="ta-contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Our Office</strong>
+              <span>Chh. Sambhajinagar, Maharashtra, India</span>
+            </div>
+          </div>
+          <div class="ta-contact-info-item">
+            <div class="ta-contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+917020995651">+91 70209 95651</a>
+            </div>
+          </div>
+          <div class="ta-contact-info-item">
+            <div class="ta-contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@technoamaze.in">info@technoamaze.in</a>
+            </div>
+          </div>
+          <div class="ta-contact-info-item">
+            <div class="ta-contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon–Fri 9:00–18:00 | Sat 10:00–16:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ta-contact-page-form-wrap" data-reveal="right">
+        <div class="ta-contact-page-card">
+          <h3 class="ta-contact-page-form-title">Send Us a Message</h3>
+          <form id="ta-contact-form" class="ta-contact-form" novalidate>
+            <input type="hidden" name="source" value="Contact Page">
+            <input type="text" name="_honey" class="ta-form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="contact-name">Name <span aria-hidden="true">*</span></label>
+              <input class="ta-contact-field" type="text" id="contact-name" name="name" placeholder="Your full name"
+                autocomplete="name" required aria-required="true">
+              <p class="ta-field-error" id="contact-name-error" role="alert"></p>
+            </div>
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="contact-email">Email <span aria-hidden="true">*</span></label>
+              <input class="ta-contact-field" type="email" id="contact-email" name="email"
+                placeholder="you@example.com" autocomplete="email" required aria-required="true">
+              <p class="ta-field-error" id="contact-email-error" role="alert"></p>
+            </div>
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="contact-phone">Phone <span aria-hidden="true">*</span></label>
+              <input class="ta-contact-field" type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210"
+                autocomplete="tel" required aria-required="true">
+              <p class="ta-field-error" id="contact-phone-error" role="alert"></p>
+            </div>
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="contact-subject">Subject <span aria-hidden="true">*</span></label>
+              <input class="ta-contact-field" type="text" id="contact-subject" name="subject"
+                placeholder="How can we help?" required aria-required="true">
+              <p class="ta-field-error" id="contact-subject-error" role="alert"></p>
+            </div>
+            <div class="ta-form-group">
+              <label class="ta-form-label" for="contact-message">Message <span aria-hidden="true">*</span></label>
+              <textarea class="ta-contact-field ta-contact-textarea" id="contact-message" name="message"
+                placeholder="Tell us about your project or inquiry..." required aria-required="true"></textarea>
+              <p class="ta-field-error" id="contact-message-error" role="alert"></p>
+            </div>
+            <button type="submit" class="ta-contact-submit ta-contact-submit--full" id="ta-submit-btn">Send Message
+              &#8594;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<?php
+get_footer();
