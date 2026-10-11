@@ -1,31 +1,46 @@
+# ==============================================================================
+# TechnoAmaze SDLC Website - Git Ignore Rules
+# ==============================================================================
+
+# 1. Dependencies
 node_modules/
+
+# 2. Environment & Secrets
 .env
 .env.*
 !.env.example
 wp-env.override.json
-.DS_Store
-Thumbs.db
 
-# Dependencies
-node_modules/
-
-# Secrets and environment files
-.env
-.env.*
-!.env.example
-wp-env.override.json
-
-# Database files and backups
+# 3. Database Dumps & Backups
+# Exclude database dumps, SQLite files, and backups, while preserving schema definition
 *.sql
+!data/schema.sql
 *.sqlite
 *.sqlite3
 *.db
 data/backups/
 
-# Local uploads and logs
+# 4. User Uploads & Media (Candidate Resumes, Uploaded Files)
 uploads/
-*.log
 
-# Operating system files
+# 5. Logs & Temporary Test Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+test_*.html
+*.tmp
+*.swp
+*.bak
+
+# 6. Operating System & Local Files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 7. IDE / Editor Folders
+.vscode/
+.idea/
